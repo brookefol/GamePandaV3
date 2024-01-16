@@ -1,0 +1,5 @@
+res://start_menu.gd
+res://start_menu.tscn
+res://navigation.tscn
+res://navigation.gd
+res://connect_four.tscn

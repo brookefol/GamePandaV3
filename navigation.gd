@@ -11,8 +11,5 @@ func _process(delta):
 	pass
 
 
-func _on_start_button_pressed():
-	get_tree().change_scene_to_file("res://navigation.tscn")
-	
-
-
+func _on_to_connect_four_pressed():
+	get_tree().change_scene_to_file("res://connect_four.tscn")
