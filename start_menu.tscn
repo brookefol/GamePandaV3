@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://nh4100o7n0o8"]
 
 [ext_resource type="Script" path="res://start_menu.gd" id="1_r1cs7"]
-[ext_resource type="Texture2D" uid="uid://6du4357i2faq" path="res://images/GamePandaHomepage.png" id="2_nu10n"]
+[ext_resource type="Texture2D" uid="uid://dsl3muccbkbuo" path="res://images/GamePandaHomepage.png" id="2_nu10n"]
 
 [node name="StartMenu" type="Control"]
 layout_mode = 3
