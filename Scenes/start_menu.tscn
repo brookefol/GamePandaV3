@@ -1,7 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://ddygymdhkt1of"]
+[gd_scene load_steps=3 format=3 uid="uid://nh4100o7n0o8"]
 
 [ext_resource type="Script" path="res://start_menu.gd" id="1_h063p"]
-[ext_resource type="Texture2D" uid="uid://dqgbvgnok43k6" path="res://images/GamePandaBackgroundv01.png" id="2_f21yh"]
+[ext_resource type="Texture2D" uid="uid://cl4bp177ix5xv" path="res://images/GamePandaHomepage.png" id="2_73xrl"]
 
 [node name="StartMenu" type="Control"]
 layout_mode = 3
@@ -13,38 +13,22 @@ grow_vertical = 2
 script = ExtResource("1_h063p")
 
 [node name="TextureRect" type="TextureRect" parent="."]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-texture = ExtResource("2_f21yh")
-
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -191.0
-offset_top = 88.0
-offset_right = 191.0
-offset_bottom = 194.0
-grow_horizontal = 2
-grow_vertical = 2
-scale = Vector2(1.56, 1.76)
-pivot_offset = Vector2(178.107, 5.5979)
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 4.0
+offset_top = 3.0
+offset_right = 24.0
+offset_bottom = -4.0
+texture = ExtResource("2_73xrl")
 
-[node name="StartButton" type="Button" parent="VBoxContainer"]
-layout_mode = 2
-text = "Start"
+[node name="Button" type="Button" parent="."]
+show_behind_parent = true
+layout_mode = 0
+offset_left = 748.0
+offset_top = 1129.0
+offset_right = 1258.0
+offset_bottom = 1243.0
 
-[node name="OptionsButton" type="Button" parent="VBoxContainer"]
-layout_mode = 2
-text = "Options"
-
-[node name="QuitButton" type="Button" parent="VBoxContainer"]
-layout_mode = 2
-text = "Quit
-"
-
-[connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
