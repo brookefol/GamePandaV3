@@ -12,11 +12,11 @@ func _process(delta):
 
 
 func _on_start_button_pressed():
-	get_tree().change_scene_to_file("res://Scenes/navigation.tscn")# Replace with function body.
+	get_tree().change_scene_to_file("res://navigation.tscn")# Replace with function body.
 	
 
 
 
 
 func _on_button_pressed():
-	get_tree().change_scene_to_file("res://Scenes/navigation.tscn") # Replace with function body.
+	get_tree().change_scene_to_file("res://navigation.tscn") # Replace with function body.
