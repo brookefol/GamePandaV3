@@ -14,8 +14,10 @@ script = ExtResource("1_857q6")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_top = 3.0
+offset_right = 2400.0
+offset_bottom = 1603.0
+scale = Vector2(0.477591, 0.397772)
 texture = ExtResource("2_ks682")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
@@ -23,11 +25,12 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -445.0
-offset_top = 76.0
-offset_right = 445.0
-offset_bottom = 269.0
+offset_left = -226.0
+offset_top = 551.0
+offset_right = 664.0
+offset_bottom = 744.0
 grow_horizontal = 2
+scale = Vector2(0.49304, 0.455144)
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/normal_font_size = 100
 theme_override_font_sizes/bold_font_size = 140
@@ -37,14 +40,11 @@ scroll_active = false
 
 [node name="MainContainer" type="HBoxContainer" parent="."]
 layout_mode = 1
-anchors_preset = 14
-anchor_top = 0.5
-anchor_right = 1.0
-anchor_bottom = 0.5
-offset_top = -459.0
-offset_bottom = 669.0
-grow_horizontal = 2
-grow_vertical = 2
+offset_left = 19.0
+offset_top = 22.0
+offset_right = 2069.0
+offset_bottom = 1150.0
+scale = Vector2(0.561367, 0.48)
 alignment = 1
 
 [node name="LeftButton" type="Button" parent="MainContainer"]
@@ -53,7 +53,6 @@ custom_minimum_size = Vector2(120, 120)
 layout_mode = 2
 size_flags_vertical = 4
 theme_override_font_sizes/font_size = 50
-text = "<"
 
 [node name="GameContainers" type="VBoxContainer" parent="MainContainer"]
 custom_minimum_size = Vector2(2050, 2.08165e-12)
