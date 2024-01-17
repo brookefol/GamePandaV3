@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://nh4100o7n0o8"]
 
 [ext_resource type="Script" path="res://start_menu.gd" id="1_r1cs7"]
-[ext_resource type="Texture2D" uid="uid://dsl3muccbkbuo" path="res://images/GamePandaHomepage.png" id="2_nu10n"]
+[ext_resource type="Texture2D" uid="uid://cl4bp177ix5xv" path="res://images/GamePandaHomepage.png" id="2_nu10n"]
 
 [node name="StartMenu" type="Control"]
 layout_mode = 3
@@ -27,8 +27,8 @@ texture = ExtResource("2_nu10n")
 show_behind_parent = true
 layout_mode = 0
 offset_left = 748.0
-offset_top = 1129.0
+offset_top = 1127.0
 offset_right = 1258.0
-offset_bottom = 1243.0
+offset_bottom = 1241.0
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
