@@ -22,6 +22,12 @@ func _setChipsOff():
 			var button = get_node("GridContainer/"+value)
 			if button:
 				button.disabled = not button.disabled
+	for i in range(6):
+		for j in range(8):
+			var value = str(i) + str(j)
+			var button = get_node("GridContainer2/"+value)
+			if button:
+				button.disabled = not button.disabled
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -31,12 +37,15 @@ func _column0Add():
 	for i in range(6):
 		if board[5-i][0] == null:
 			var value = str(5-i) + str(0)
-			var button = get_node("GridContainer/"+value)
-			if button:
-				button.disabled = false
+			if playerTurn % 2 == 0:
+				var button = get_node("GridContainer/"+value)
+				if button:
+					button.disabled = false
+			else:
+				var button = get_node("GridContainer2/"+value)
 				board[5-i][0] = playerSymbol[playerTurn%2]
-				if playerTurn % 2 == 1:
-					pass
+				if button:
+					button.disabled = false
 			break
 	playerTurn += 1
 
