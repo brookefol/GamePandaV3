@@ -838,11 +838,12 @@ offset_right = 2007.0
 offset_bottom = 1438.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_1dabp")
 
-[connection signal="pressed" from="Column0" to="." method="_column0Add"]
-[connection signal="pressed" from="Column1" to="." method="_column1Add"]
-[connection signal="pressed" from="Column2" to="." method="_column2Add"]
+[connection signal="pressed" from="Column0" to="." method="_column0_add"]
+[connection signal="pressed" from="Column1" to="." method="_column1_add"]
+[connection signal="pressed" from="Column2" to="." method="_column2_add"]
+[connection signal="pressed" from="Column3" to="." method="_column3_add"]
 [connection signal="pressed" from="Column3" to="." method="_column3Add"]
-[connection signal="pressed" from="Column4" to="." method="_column4Add"]
-[connection signal="pressed" from="Column5" to="." method="_column5Add"]
-[connection signal="pressed" from="Column6" to="." method="_column6Add"]
-[connection signal="pressed" from="Column7" to="." method="_column7Add"]
+[connection signal="pressed" from="Column4" to="." method="_column4_add"]
+[connection signal="pressed" from="Column5" to="." method="_column5_add"]
+[connection signal="pressed" from="Column6" to="." method="_column6_add"]
+[connection signal="pressed" from="Column7" to="." method="_column7_add"]
