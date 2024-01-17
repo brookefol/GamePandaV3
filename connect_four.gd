@@ -27,14 +27,6 @@ func _setChipsOff():
 func _process(delta):
 	pass
 
-func _updateBoard():
-	for i in range(6):
-		for j in range(8):
-			if boardArray[j][i] != "-":
-				var button = get_node("oneone")
-				button.visible = not button.visible
-
-
 func _column0Add():
 	for i in range(6):
 		if board[5-i][0] == null:
