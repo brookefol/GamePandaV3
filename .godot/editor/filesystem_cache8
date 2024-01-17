@@ -1,6 +1,14 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1705427945
+::res://::1705455373
+choose_game.tscn::PackedScene::-1::1705455373::0::1::::<><>::
+connect_four.tscn::PackedScene::5038220328298926231::1705453623::0::1::::<><>::res://connect_four.gd<>uid://dqgbvgnok43k6::::res://images/GamePandaBackgroundv01.png
 icon.svg::CompressedTexture2D::508721524047509777::1705417368::1705427946::1::::<><>::
+navigation.gd::GDScript::-1::1705451680::0::1::::<>Control<>::
+navigation.tscn::PackedScene::5135923721487225186::1705453623::0::1::::<><>::res://navigation.gd<>uid://dqgbvgnok43k6::::res://images/GamePandaBackgroundv01.png
 README.md::TextFile::-1::1705417368::0::1::::<><>::
-start_menu.gd::GDScript::-1::1705427837::0::1::::<>Control<>::
-start_menu.tscn::PackedScene::7419781444347954849::1705417368::0::1::::<><>::res://start_menu.gd
+connect_four.gd::GDScript::-1::1705451747::0::1::::<>Control<>::
+start_menu.gd::GDScript::-1::1705455421::0::1::::<>Control<>::
+start_menu.tscn::PackedScene::7419781444347954849::1705453623::0::1::::<><>::res://start_menu.gd<>uid://dqgbvgnok43k6::::res://images/GamePandaBackgroundv01.png
+::res://images/::1705455113
+ConnectFourBoardv01.png::CompressedTexture2D::7680080662026287019::1705455113::1705455432::1::::<><>::
+GamePandaBackgroundv01.png::CompressedTexture2D::8294768370350139371::1705446627::1705455432::1::::<><>::
