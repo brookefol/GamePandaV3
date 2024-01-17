@@ -1,38 +1,29 @@
 extends Control
 
-var boardArray = [
-		["-", "-", "-", "-", "-", "-"], 
-		["-", "-", "-", "-", "-", "-"], 
-		["-", "-", "-", "-", "-", "-"], 
-		["-", "-", "-", "-", "-", "-"],
-		["-", "-", "-", "-", "-", "-"], 
-		["-", "-", "-", "-", "-", "-"],
-		["-", "-", "-", "-", "-", "-"], 
-		["-", "-", "-", "-", "-", "-"]]
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # each list is a column
+	# each list is a column
+	var boardArray = [
+		[0, 0, 0, 0, 0, 0], 
+		[0, 0, 0, 0, 0, 0], 
+		[0, 0, 0, 0, 0, 0], 
+		[0, 0, 0, 0, 0, 0],
+		[0, 0, 0, 0, 0, 0], 
+		[0, 0, 0, 0, 0, 0],
+		[0, 0, 0, 0, 0, 0], 
+		[0, 0, 0, 0, 0, 0]]
+	
+	
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
 
-func _updateBoard():
-	for i in range(6):
-		for j in range(8):
-			if boardArray[j][i] != "-":
-				var button = get_node("oneone")
-				button.visible = not button.visible
-
 
 func _column1_add():
-	for i in range(6):
-		if boardArray[0][i] == "-":
-			boardArray[0][i] = "X"
-			_updateBoard()
-			break
+	pass # Replace with function body.
 
 
 func _column2_add():
