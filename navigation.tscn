@@ -1,9 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://caocdfgt4wp2e"]
+[gd_scene load_steps=3 format=3 uid="uid://cff46b2le2pdi"]
 
 [ext_resource type="Script" path="res://navigation.gd" id="1_857q6"]
 [ext_resource type="Texture2D" uid="uid://dqgbvgnok43k6" path="res://images/GamePandaBackgroundv01.png" id="2_ks682"]
 
 [node name="Navigation" type="Control"]
+custom_minimum_size = Vector2(2400, 1600)
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -14,106 +15,106 @@ script = ExtResource("1_857q6")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 0
-offset_top = 3.0
 offset_right = 2400.0
-offset_bottom = 1603.0
-scale = Vector2(0.477591, 0.397772)
+offset_bottom = 1600.0
 texture = ExtResource("2_ks682")
 
-[node name="RichTextLabel" type="RichTextLabel" parent="."]
+[node name="Title" type="RichTextLabel" parent="."]
+custom_minimum_size = Vector2(1000, 2.08165e-12)
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -226.0
-offset_top = 551.0
-offset_right = 664.0
-offset_bottom = 744.0
+offset_left = -500.0
+offset_top = 64.0
+offset_right = 500.0
+offset_bottom = 263.0
 grow_horizontal = 2
-scale = Vector2(0.49304, 0.455144)
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/normal_font_size = 100
-theme_override_font_sizes/bold_font_size = 140
+theme_override_font_sizes/bold_font_size = 120
 bbcode_enabled = true
 text = "[center][b]Navigation[/b][/center]"
-scroll_active = false
 
-[node name="MainContainer" type="HBoxContainer" parent="."]
+[node name="MainContainer1" type="HBoxContainer" parent="."]
 layout_mode = 1
-offset_left = 19.0
-offset_top = 22.0
-offset_right = 2069.0
-offset_bottom = 1150.0
-scale = Vector2(0.561367, 0.478465)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 202.0
+offset_bottom = -68.0
+grow_horizontal = 2
+grow_vertical = 2
 alignment = 1
 
-[node name="LeftButton" type="Button" parent="MainContainer"]
+[node name="LeftButton" type="Button" parent="MainContainer1"]
 visible = false
 custom_minimum_size = Vector2(120, 120)
 layout_mode = 2
 size_flags_vertical = 4
 theme_override_font_sizes/font_size = 50
 
-[node name="GameContainers" type="VBoxContainer" parent="MainContainer"]
-custom_minimum_size = Vector2(2050, 2.08165e-12)
+[node name="GameContainers" type="VBoxContainer" parent="MainContainer1"]
+custom_minimum_size = Vector2(2000, 1200)
 layout_mode = 2
+alignment = 1
 
-[node name="Row1" type="HBoxContainer" parent="MainContainer/GameContainers"]
+[node name="Row1" type="HBoxContainer" parent="MainContainer1/GameContainers"]
 custom_minimum_size = Vector2(2050, 500)
 layout_mode = 2
 alignment = 1
 
-[node name="toConnectFour" type="Button" parent="MainContainer/GameContainers/Row1"]
+[node name="toConnectFour" type="Button" parent="MainContainer1/GameContainers/Row1"]
 custom_minimum_size = Vector2(500, 500)
 layout_mode = 2
 text = "CONNECT FOUR"
 
-[node name="AspectRatioContainer" type="AspectRatioContainer" parent="MainContainer/GameContainers/Row1"]
+[node name="AspectRatioContainer" type="AspectRatioContainer" parent="MainContainer1/GameContainers/Row1"]
 custom_minimum_size = Vector2(120, 2.08165e-12)
 layout_mode = 2
 
-[node name="toDarts" type="Button" parent="MainContainer/GameContainers/Row1"]
+[node name="toDarts" type="Button" parent="MainContainer1/GameContainers/Row1"]
 custom_minimum_size = Vector2(500, 500)
 layout_mode = 2
 
-[node name="AspectRatioContainer2" type="AspectRatioContainer" parent="MainContainer/GameContainers/Row1"]
+[node name="AspectRatioContainer2" type="AspectRatioContainer" parent="MainContainer1/GameContainers/Row1"]
 custom_minimum_size = Vector2(120, 2.08165e-12)
 layout_mode = 2
 
-[node name="toTicTacToe" type="Button" parent="MainContainer/GameContainers/Row1"]
+[node name="toTicTacToe" type="Button" parent="MainContainer1/GameContainers/Row1"]
 custom_minimum_size = Vector2(500, 500)
 layout_mode = 2
 
-[node name="AspectRatioContainer" type="AspectRatioContainer" parent="MainContainer/GameContainers"]
+[node name="AspectRatioContainer" type="AspectRatioContainer" parent="MainContainer1/GameContainers"]
 custom_minimum_size = Vector2(2.08165e-12, 120)
 layout_mode = 2
 
-[node name="Row2" type="HBoxContainer" parent="MainContainer/GameContainers"]
+[node name="Row2" type="HBoxContainer" parent="MainContainer1/GameContainers"]
 custom_minimum_size = Vector2(2050, 500)
 layout_mode = 2
 alignment = 1
 
-[node name="toArchery" type="Button" parent="MainContainer/GameContainers/Row2"]
+[node name="toArchery" type="Button" parent="MainContainer1/GameContainers/Row2"]
 custom_minimum_size = Vector2(500, 500)
 layout_mode = 2
 
-[node name="AspectRatioContainer" type="AspectRatioContainer" parent="MainContainer/GameContainers/Row2"]
+[node name="AspectRatioContainer" type="AspectRatioContainer" parent="MainContainer1/GameContainers/Row2"]
 custom_minimum_size = Vector2(120, 2.08165e-12)
 layout_mode = 2
 
-[node name="toPool" type="Button" parent="MainContainer/GameContainers/Row2"]
+[node name="toPool" type="Button" parent="MainContainer1/GameContainers/Row2"]
 custom_minimum_size = Vector2(500, 500)
 layout_mode = 2
 
-[node name="AspectRatioContainer2" type="AspectRatioContainer" parent="MainContainer/GameContainers/Row2"]
+[node name="AspectRatioContainer2" type="AspectRatioContainer" parent="MainContainer1/GameContainers/Row2"]
 custom_minimum_size = Vector2(120, 2.08165e-12)
 layout_mode = 2
 
-[node name="toFlappyBird" type="Button" parent="MainContainer/GameContainers/Row2"]
+[node name="toFlappyBird" type="Button" parent="MainContainer1/GameContainers/Row2"]
 custom_minimum_size = Vector2(500, 500)
 layout_mode = 2
 
-[node name="RightButton" type="Button" parent="MainContainer"]
+[node name="RightButton" type="Button" parent="MainContainer1"]
 visible = false
 custom_minimum_size = Vector2(120, 120)
 layout_mode = 2
@@ -121,4 +122,4 @@ size_flags_vertical = 4
 theme_override_font_sizes/font_size = 50
 text = ">"
 
-[connection signal="pressed" from="MainContainer/GameContainers/Row1/toConnectFour" to="." method="_on_to_connect_four_pressed"]
+[connection signal="pressed" from="MainContainer1/GameContainers/Row1/toConnectFour" to="." method="_on_to_connect_four_pressed"]
