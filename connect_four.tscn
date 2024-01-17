@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://cd1s0uewwltn0"]
+[gd_scene load_steps=4 format=3 uid="uid://cd1s0uewwltn0"]
 
 [ext_resource type="Script" path="res://connect_four.gd" id="1_qsyxw"]
 [ext_resource type="Texture2D" uid="uid://dqgbvgnok43k6" path="res://images/GamePandaBackgroundv01.png" id="2_j35x5"]
+[ext_resource type="Texture2D" uid="uid://dhoj2oh6dn8wd" path="res://images/ConnectFourBoardv01.png" id="3_yxi4y"]
 
 [node name="ConnectFour" type="Control"]
 layout_mode = 3
@@ -17,3 +18,11 @@ layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 texture = ExtResource("2_j35x5")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 317.0
+offset_top = 160.0
+offset_right = 2139.0
+offset_bottom = 1549.0
+texture = ExtResource("3_yxi4y")
