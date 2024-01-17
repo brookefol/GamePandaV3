@@ -44,7 +44,7 @@ offset_left = 19.0
 offset_top = 22.0
 offset_right = 2069.0
 offset_bottom = 1150.0
-scale = Vector2(0.561367, 0.48)
+scale = Vector2(0.561367, 0.478465)
 alignment = 1
 
 [node name="LeftButton" type="Button" parent="MainContainer"]
@@ -66,7 +66,7 @@ alignment = 1
 [node name="toConnectFour" type="Button" parent="MainContainer/GameContainers/Row1"]
 custom_minimum_size = Vector2(500, 500)
 layout_mode = 2
-text = "connect four"
+text = "CONNECT FOUR"
 
 [node name="AspectRatioContainer" type="AspectRatioContainer" parent="MainContainer/GameContainers/Row1"]
 custom_minimum_size = Vector2(120, 2.08165e-12)
