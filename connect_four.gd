@@ -1,44 +1,63 @@
 extends Control
 
-var board = [
-	[null, null, null, null, null, null, null, null], 
-	[null, null, null, null, null, null, null, null], 
-	[null, null, null, null, null, null, null, null], 
-	[null, null, null, null, null, null, null, null], 
-	[null, null, null, null, null, null, null, null], 
-	[null, null, null, null, null, null, null, null]]
-
-var playerTurn = 0
-var playerSymbol = "X"
+var boardArray = [
+		["-", "-", "-", "-", "-", "-"], 
+		["-", "-", "-", "-", "-", "-"], 
+		["-", "-", "-", "-", "-", "-"], 
+		["-", "-", "-", "-", "-", "-"],
+		["-", "-", "-", "-", "-", "-"], 
+		["-", "-", "-", "-", "-", "-"],
+		["-", "-", "-", "-", "-", "-"], 
+		["-", "-", "-", "-", "-", "-"]]
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	_setChipsOff()
+	pass # each list is a column
 
-func _setChipsOff():
-	for i in range(6):
-		for j in range(8):
-			var value = str(i) + str(j)
-			print(value)
-			var button = get_node("GridContainer/"+value)
-			print(button is Button)
-			if button:
-				button.disabled = not button.disabled
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
 
-
-func _on_column0Add():
+func _updateBoard():
 	for i in range(6):
-		if board[5-i][0] == null:
-			var value = str(5-i) + str(0)
-			var button = get_node("GridContainer/"+value)
-			if button:
-				button.disabled = not button.disabled
-				board[5-i][0] = playerSymbol
-				if playerTurn % 2 == 1:
-					button.focused = not button.focused
+		for j in range(8):
+			if boardArray[j][i] != "-":
+				var button = get_node("oneone")
+				button.visible = not button.visible
+
+
+func _column1_add():
+	for i in range(6):
+		if boardArray[0][i] == "-":
+			boardArray[0][i] = "X"
+			_updateBoard()
 			break
-	playerTurn += 1
+
+
+func _column2_add():
+	pass # Replace with function body.
+
+
+func _column3_add():
+	pass # Replace with function body.
+
+
+func _column4_add():
+	pass # Replace with function body.
+
+
+func _column5_add():
+	pass # Replace with function body.
+
+
+func _column6_add():
+	pass # Replace with function body.
+
+
+func _column7_add():
+	pass # Replace with function body.
+
+
+func _column8_add():
+	pass # Replace with function body.
