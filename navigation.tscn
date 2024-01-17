@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://cff46b2le2pdi"]
+[gd_scene load_steps=3 format=3 uid="uid://cff46b2le2pdi"]
 
 [ext_resource type="Script" path="res://navigation.gd" id="1_857q6"]
+[ext_resource type="Texture2D" uid="uid://dqgbvgnok43k6" path="res://images/GamePandaBackgroundv01.png" id="2_ks682"]
 
 [node name="Navigation" type="Control"]
 layout_mode = 3
@@ -11,14 +12,115 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_857q6")
 
-[node name="toConnectFour" type="Button" parent="."]
-custom_minimum_size = Vector2(2.08165e-12, 2.08165e-12)
+[node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 0
-offset_left = 478.0
-offset_top = 389.0
-offset_right = 615.0
-offset_bottom = 425.0
-theme_override_font_sizes/font_size = 20
-text = "Connect Four"
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_ks682")
 
-[connection signal="pressed" from="toConnectFour" to="." method="_on_to_connect_four_pressed"]
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -445.0
+offset_top = 74.0
+offset_right = 445.0
+offset_bottom = 251.0
+grow_horizontal = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 100
+theme_override_font_sizes/bold_font_size = 120
+bbcode_enabled = true
+text = "[center][b]Navigation[/b][/center]"
+scroll_active = false
+
+[node name="MainContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -480.0
+offset_bottom = 648.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="MainContainer"]
+custom_minimum_size = Vector2(120, 2.08165e-12)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+
+[node name="Button" type="Button" parent="MainContainer/MarginContainer"]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_font_sizes/font_size = 50
+text = "<"
+
+[node name="GameContainers" type="VBoxContainer" parent="MainContainer"]
+custom_minimum_size = Vector2(2050, 2.08165e-12)
+layout_mode = 2
+
+[node name="Row1" type="HBoxContainer" parent="MainContainer/GameContainers"]
+custom_minimum_size = Vector2(2050, 500)
+layout_mode = 2
+alignment = 1
+
+[node name="toConnectFour" type="Button" parent="MainContainer/GameContainers/Row1"]
+custom_minimum_size = Vector2(500, 500)
+layout_mode = 2
+
+[node name="AspectRatioContainer" type="AspectRatioContainer" parent="MainContainer/GameContainers/Row1"]
+custom_minimum_size = Vector2(120, 2.08165e-12)
+layout_mode = 2
+
+[node name="toDarts" type="Button" parent="MainContainer/GameContainers/Row1"]
+custom_minimum_size = Vector2(500, 500)
+layout_mode = 2
+
+[node name="AspectRatioContainer2" type="AspectRatioContainer" parent="MainContainer/GameContainers/Row1"]
+custom_minimum_size = Vector2(120, 2.08165e-12)
+layout_mode = 2
+
+[node name="toTicTacToe" type="Button" parent="MainContainer/GameContainers/Row1"]
+custom_minimum_size = Vector2(500, 500)
+layout_mode = 2
+
+[node name="AspectRatioContainer" type="AspectRatioContainer" parent="MainContainer/GameContainers"]
+custom_minimum_size = Vector2(2.08165e-12, 120)
+layout_mode = 2
+
+[node name="Row2" type="HBoxContainer" parent="MainContainer/GameContainers"]
+custom_minimum_size = Vector2(2050, 500)
+layout_mode = 2
+alignment = 1
+
+[node name="toArchery" type="Button" parent="MainContainer/GameContainers/Row2"]
+custom_minimum_size = Vector2(500, 500)
+layout_mode = 2
+
+[node name="AspectRatioContainer" type="AspectRatioContainer" parent="MainContainer/GameContainers/Row2"]
+custom_minimum_size = Vector2(120, 2.08165e-12)
+layout_mode = 2
+
+[node name="toPool" type="Button" parent="MainContainer/GameContainers/Row2"]
+custom_minimum_size = Vector2(500, 500)
+layout_mode = 2
+
+[node name="AspectRatioContainer2" type="AspectRatioContainer" parent="MainContainer/GameContainers/Row2"]
+custom_minimum_size = Vector2(120, 2.08165e-12)
+layout_mode = 2
+
+[node name="toFlappyBird" type="Button" parent="MainContainer/GameContainers/Row2"]
+custom_minimum_size = Vector2(500, 500)
+layout_mode = 2
+
+[node name="RightButton" type="Button" parent="MainContainer"]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_font_sizes/font_size = 50
+text = ">"
