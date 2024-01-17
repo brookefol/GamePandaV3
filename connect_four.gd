@@ -172,3 +172,7 @@ func _column7_add():
 
 func _on_column_5_pressed():
 	pass # Replace with function body.
+
+
+func _on_back_button_pressed():
+	get_tree().change_scene_to_file("res://navigation.tscn") # Replace with function body.
