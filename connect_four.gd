@@ -14,6 +14,19 @@ var boardArray = [
 func _ready():
 	pass # each list is a column
 
+func _setChipsOff():
+	for i in range(6):
+		for j in range(8):
+			var value = str(i) + str(j)
+			var button = get_node("GridContainer/"+value)
+			if button:
+				button.disabled = not button.disabled
+	for i in range(6):
+		for j in range(8):
+			var value = str(i) + str(j)
+			var button = get_node("GridContainer2/"+value)
+			if button:
+				button.disabled = not button.disabled
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -21,10 +34,19 @@ func _process(delta):
 
 func _updateBoard():
 	for i in range(6):
-		for j in range(8):
-			if boardArray[j][i] != "-":
-				var button = get_node("oneone")
-				button.visible = not button.visible
+		if board[5-i][0] == null:
+			var value = str(5-i) + str(0)
+			if playerTurn % 2 == 0:
+				var button = get_node("GridContainer/"+value)
+				if button:
+					button.disabled = false
+			else:
+				var button = get_node("GridContainer2/"+value)
+				board[5-i][0] = playerSymbol[playerTurn%2]
+				if button:
+					button.disabled = false
+			break
+	playerTurn += 1
 
 
 func _column1_add():
