@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bqa7ilg7gu57n"]
 
-[node name="Control" type="Control"]
+[node name="tic_tac_toe" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
