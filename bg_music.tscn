@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://g55rnsmvxmc2"]
+
+[ext_resource type="AudioStream" uid="uid://cw0af8m1y5p6i" path="res://Colorful-Flowers(chosic.com).mp3" id="1_uf7k8"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer"]
+stream = ExtResource("1_uf7k8")
+volume_db = 0.54
+autoplay = true
