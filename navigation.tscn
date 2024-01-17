@@ -77,9 +77,10 @@ text = "CONNECT FOUR"
 custom_minimum_size = Vector2(120, 2.08165e-12)
 layout_mode = 2
 
-[node name="toDarts" type="Button" parent="MainContainer/GameContainers/Row1"]
+[node name="toPong" type="Button" parent="MainContainer/GameContainers/Row1"]
 custom_minimum_size = Vector2(500, 500)
 layout_mode = 2
+text = "PONG"
 
 [node name="AspectRatioContainer2" type="AspectRatioContainer" parent="MainContainer/GameContainers/Row1"]
 custom_minimum_size = Vector2(120, 2.08165e-12)
@@ -127,3 +128,4 @@ theme_override_font_sizes/font_size = 50
 text = ">"
 
 [connection signal="pressed" from="MainContainer/GameContainers/Row1/toConnectFour" to="." method="_on_to_connect_four_pressed"]
+[connection signal="pressed" from="MainContainer/GameContainers/Row1/toPong" to="." method="_on_to_pong_pressed"]
