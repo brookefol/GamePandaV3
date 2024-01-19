@@ -3,7 +3,7 @@ extends Control
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	get_window().size = Vector2i(2000, 1600)
+	get_window().size = Vector2i(2400, 1600)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

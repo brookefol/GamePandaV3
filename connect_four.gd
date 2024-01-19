@@ -81,13 +81,5 @@ func _dropChip(column):
 	_winCheck()
 
 
-func _column6_add():
-	_dropChip(6)
-
-
-func _column7_add():
-	_dropChip(7)
-
-
 func _on_back_button_pressed():
 	get_tree().change_scene_to_file("res://navigation.tscn") # Replace with function body.
