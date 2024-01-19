@@ -13,23 +13,18 @@ grow_vertical = 2
 script = ExtResource("1_r1cs7")
 
 [node name="TextureRect" type="TextureRect" parent="."]
-layout_mode = 1
-anchors_preset = -1
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 4.0
-offset_top = 3.0
-offset_right = 24.0
-offset_bottom = -4.0
+layout_mode = 0
+offset_top = 4.0
+offset_right = 1998.0
+offset_bottom = 1606.0
 texture = ExtResource("2_nu10n")
 
-[node name="Button" type="Button" parent="."]
+[node name="Button" type="Button" parent="TextureRect"]
 show_behind_parent = true
 layout_mode = 0
-offset_left = 748.0
-offset_top = 1127.0
-offset_right = 1258.0
-offset_bottom = 1241.0
-scale = Vector2(1, 0.782613)
+offset_left = 694.0
+offset_top = 748.0
+offset_right = 1197.0
+offset_bottom = 858.0
 
-[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="TextureRect/Button" to="." method="_buttonPressed"]
