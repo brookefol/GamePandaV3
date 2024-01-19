@@ -40,8 +40,8 @@ script = ExtResource("1_qsyxw")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_right = 2400.0
+offset_bottom = 1600.0
 texture = ExtResource("2_j35x5")
 
 [node name="BackButton" type="Button" parent="TextureRect"]
