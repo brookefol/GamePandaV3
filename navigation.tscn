@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://cltjp5ifocvfo"]
+[gd_scene load_steps=3 format=3 uid="uid://cwb1rq3xdrnn6"]
 
 [ext_resource type="Script" path="res://navigation.gd" id="1_857q6"]
 [ext_resource type="Texture2D" uid="uid://dqgbvgnok43k6" path="res://images/GamePandaBackgroundv01.png" id="2_ks682"]
@@ -10,7 +10,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-scale = Vector2(1, 0.96)
+scale = Vector2(1, 1.08)
 script = ExtResource("1_857q6")
 
 [node name="TextureRect" type="TextureRect" parent="."]
@@ -18,7 +18,7 @@ layout_mode = 0
 offset_top = 3.0
 offset_right = 2400.0
 offset_bottom = 1603.0
-scale = Vector2(0.477591, 0.397772)
+scale = Vector2(0.837589, 0.916291)
 texture = ExtResource("2_ks682")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
@@ -26,12 +26,12 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -226.0
-offset_top = 551.0
-offset_right = 664.0
-offset_bottom = 744.0
+offset_left = -539.0
+offset_top = 120.37
+offset_right = 351.0
+offset_bottom = 313.37
 grow_horizontal = 2
-scale = Vector2(0.49304, 0.455144)
+scale = Vector2(1.08248, 0.565488)
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/normal_font_size = 100
 theme_override_font_sizes/bold_font_size = 140
@@ -41,11 +41,11 @@ scroll_active = false
 
 [node name="MainContainer" type="HBoxContainer" parent="."]
 layout_mode = 1
-offset_left = 19.0
-offset_top = 22.0
-offset_right = 2069.0
-offset_bottom = 1150.0
-scale = Vector2(0.561367, 0.478465)
+offset_left = 140.0
+offset_top = 309.259
+offset_right = 2190.0
+offset_bottom = 1437.26
+scale = Vector2(0.801369, 0.811799)
 alignment = 1
 
 [node name="LeftButton" type="Button" parent="MainContainer"]
@@ -77,9 +77,10 @@ text = "CONNECT FOUR"
 custom_minimum_size = Vector2(120, 2.08165e-12)
 layout_mode = 2
 
-[node name="toDarts" type="Button" parent="MainContainer/GameContainers/Row1"]
+[node name="toPong" type="Button" parent="MainContainer/GameContainers/Row1"]
 custom_minimum_size = Vector2(500, 500)
 layout_mode = 2
+text = "PONG"
 
 [node name="AspectRatioContainer2" type="AspectRatioContainer" parent="MainContainer/GameContainers/Row1"]
 custom_minimum_size = Vector2(120, 2.08165e-12)
@@ -88,6 +89,7 @@ layout_mode = 2
 [node name="toTicTacToe" type="Button" parent="MainContainer/GameContainers/Row1"]
 custom_minimum_size = Vector2(500, 500)
 layout_mode = 2
+text = "ARCHERY"
 
 [node name="AspectRatioContainer" type="AspectRatioContainer" parent="MainContainer/GameContainers"]
 custom_minimum_size = Vector2(2.08165e-12, 120)
@@ -127,3 +129,5 @@ theme_override_font_sizes/font_size = 50
 text = ">"
 
 [connection signal="pressed" from="MainContainer/GameContainers/Row1/toConnectFour" to="." method="_on_to_connect_four_pressed"]
+[connection signal="pressed" from="MainContainer/GameContainers/Row1/toPong" to="." method="_on_to_pong_pressed"]
+[connection signal="pressed" from="MainContainer/GameContainers/Row1/toTicTacToe" to="." method="_on_to_archery_pressed"]
