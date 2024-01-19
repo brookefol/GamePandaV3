@@ -13,6 +13,7 @@ var playerSymbol = ["X", "O"]
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	get_window().size = Vector2i(2400, 1600)
 	_setChipsOff()
 
 func _setChipsOff():

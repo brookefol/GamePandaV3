@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://cff46b2le2pdi"]
+[gd_scene load_steps=3 format=3 uid="uid://w1exqyp3k1u7"]
 
 [ext_resource type="Script" path="res://navigation.gd" id="1_csj3w"]
 [ext_resource type="Texture2D" uid="uid://dqgbvgnok43k6" path="res://images/GamePandaBackgroundv01.png" id="2_h7ixw"]
@@ -76,14 +76,16 @@ layout_mode = 2
 [node name="toDarts" type="Button" parent="MainContainer1/GameContainers/Row1"]
 custom_minimum_size = Vector2(500, 500)
 layout_mode = 2
+text = "Archery"
 
 [node name="AspectRatioContainer2" type="AspectRatioContainer" parent="MainContainer1/GameContainers/Row1"]
 custom_minimum_size = Vector2(120, 2.08165e-12)
 layout_mode = 2
 
-[node name="toTicTacToe" type="Button" parent="MainContainer1/GameContainers/Row1"]
+[node name="toPong" type="Button" parent="MainContainer1/GameContainers/Row1"]
 custom_minimum_size = Vector2(500, 500)
 layout_mode = 2
+text = "Pong"
 
 [node name="AspectRatioContainer" type="AspectRatioContainer" parent="MainContainer1/GameContainers"]
 custom_minimum_size = Vector2(2.08165e-12, 120)
@@ -123,3 +125,4 @@ theme_override_font_sizes/font_size = 50
 text = ">"
 
 [connection signal="pressed" from="MainContainer1/GameContainers/Row1/toConnectFour" to="." method="_on_to_connect_four_pressed"]
+[connection signal="pressed" from="MainContainer1/GameContainers/Row1/toPong" to="." method="_on_to_pong_pressed"]
