@@ -73,7 +73,7 @@ text = "CONNECT FOUR"
 custom_minimum_size = Vector2(120, 2.08165e-12)
 layout_mode = 2
 
-[node name="toDarts" type="Button" parent="MainContainer1/GameContainers/Row1"]
+[node name="toArchery" type="Button" parent="MainContainer1/GameContainers/Row1"]
 custom_minimum_size = Vector2(500, 500)
 layout_mode = 2
 text = "Archery"
@@ -125,4 +125,5 @@ theme_override_font_sizes/font_size = 50
 text = ">"
 
 [connection signal="pressed" from="MainContainer1/GameContainers/Row1/toConnectFour" to="." method="_on_to_connect_four_pressed"]
+[connection signal="pressed" from="MainContainer1/GameContainers/Row1/toArchery" to="." method="_on_to_archery_pressed"]
 [connection signal="pressed" from="MainContainer1/GameContainers/Row1/toPong" to="." method="_on_to_pong_pressed"]
