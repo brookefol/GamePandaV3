@@ -1,8 +1,8 @@
 [gd_scene load_steps=16 format=3 uid="uid://c5l7gbg4j7gs"]
 
 [ext_resource type="Script" path="res://connect_four.gd" id="1_g5cus"]
-[ext_resource type="Texture2D" uid="uid://dqgbvgnok43k6" path="res://images/GamePandaBackgroundv01.png" id="1_sf51l"]
 [ext_resource type="Texture2D" uid="uid://dhoj2oh6dn8wd" path="res://images/ConnectFourBoardv01.png" id="2_6p7gf"]
+[ext_resource type="Texture2D" uid="uid://bskddro4se2ch" path="res://images/GamePandaBackgroundv02.png" id="2_q74va"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1wk6u"]
 bg_color = Color(1, 0.866667, 0, 1)
@@ -40,7 +40,7 @@ bg_color = Color(0.6, 0.6, 0.6, 0)
 bg_color = Color(0.6, 0.6, 0.6, 0)
 
 [node name="connectFour" type="Control"]
-custom_minimum_size = Vector2(2400, 1600)
+custom_minimum_size = Vector2(2000, 1600)
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -51,9 +51,9 @@ script = ExtResource("1_g5cus")
 
 [node name="Background" type="TextureRect" parent="."]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-texture = ExtResource("1_sf51l")
+offset_right = 2000.0
+offset_bottom = 1600.0
+texture = ExtResource("2_q74va")
 
 [node name="GridContainer" type="GridContainer" parent="."]
 layout_mode = 1

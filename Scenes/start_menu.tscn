@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://cx68w54qvnlhr"]
+[gd_scene load_steps=3 format=3 uid="uid://nh4100o7n0o8"]
 
 [ext_resource type="Script" path="res://start_menu.gd" id="1_h063p"]
 [ext_resource type="Texture2D" uid="uid://cl4bp177ix5xv" path="res://images/GamePandaHomepage.png" id="2_73xrl"]

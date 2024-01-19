@@ -12,7 +12,7 @@ func _process(delta):
 
 
 func _on_to_connect_four_pressed():
-	get_tree().change_scene_to_file("res://connect_four.tscn")
+	get_tree().change_scene_to_file("res://Scenes/connect_four.tscn")
 
 
 func _on_to_pong_pressed():
