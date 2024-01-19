@@ -89,6 +89,7 @@ layout_mode = 2
 [node name="toTicTacToe" type="Button" parent="MainContainer/GameContainers/Row1"]
 custom_minimum_size = Vector2(500, 500)
 layout_mode = 2
+text = "ARCHERY"
 
 [node name="AspectRatioContainer" type="AspectRatioContainer" parent="MainContainer/GameContainers"]
 custom_minimum_size = Vector2(2.08165e-12, 120)
@@ -129,3 +130,4 @@ text = ">"
 
 [connection signal="pressed" from="MainContainer/GameContainers/Row1/toConnectFour" to="." method="_on_to_connect_four_pressed"]
 [connection signal="pressed" from="MainContainer/GameContainers/Row1/toPong" to="." method="_on_to_pong_pressed"]
+[connection signal="pressed" from="MainContainer/GameContainers/Row1/toTicTacToe" to="." method="_on_to_archery_pressed"]
