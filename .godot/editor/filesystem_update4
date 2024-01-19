@@ -1,3 +1,8 @@
 res://start_menu.tscn
 res://navigation.tscn
 res://connect_four.tscn
+res://connect_four.gd
+res://navigation.gd
+res://start_menu.gd
+res://control.tscn
+res://pong.tscn
