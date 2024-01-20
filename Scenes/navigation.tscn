@@ -1,7 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://w1exqyp3k1u7"]
+[gd_scene load_steps=5 format=3 uid="uid://w1exqyp3k1u7"]
 
 [ext_resource type="Script" path="res://navigation.gd" id="1_csj3w"]
-[ext_resource type="Texture2D" uid="uid://dqgbvgnok43k6" path="res://images/GamePandaBackgroundv01.png" id="2_h7ixw"]
+[ext_resource type="Texture2D" uid="uid://biivrs4wcjmp0" path="res://images/GamePandaNavScreen.png" id="2_mq1jq"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p15yk"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_klp37"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
 
 [node name="Navigation" type="Control"]
 custom_minimum_size = Vector2(2400, 1600)
@@ -17,7 +23,7 @@ script = ExtResource("1_csj3w")
 layout_mode = 0
 offset_right = 2400.0
 offset_bottom = 1600.0
-texture = ExtResource("2_h7ixw")
+texture = ExtResource("2_mq1jq")
 
 [node name="Title" type="RichTextLabel" parent="."]
 custom_minimum_size = Vector2(1000, 2.08165e-12)
@@ -36,94 +42,47 @@ theme_override_font_sizes/bold_font_size = 120
 bbcode_enabled = true
 text = "[center][b]Navigation[/b][/center]"
 
-[node name="MainContainer1" type="HBoxContainer" parent="."]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_top = 202.0
-offset_bottom = -68.0
-grow_horizontal = 2
-grow_vertical = 2
-alignment = 1
-
-[node name="LeftButton" type="Button" parent="MainContainer1"]
-visible = false
-custom_minimum_size = Vector2(120, 120)
+[node name="toConnectFour" type="Button" parent="."]
+custom_minimum_size = Vector2(2.08165e-12, 2.08165e-12)
 layout_mode = 2
-size_flags_vertical = 4
-theme_override_font_sizes/font_size = 50
+offset_left = 139.0
+offset_top = 179.0
+offset_right = 799.0
+offset_bottom = 805.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_p15yk")
+theme_override_styles/hover = SubResource("StyleBoxFlat_klp37")
 
-[node name="GameContainers" type="VBoxContainer" parent="MainContainer1"]
-custom_minimum_size = Vector2(2000, 1200)
+[node name="toTicTacToe" type="Button" parent="."]
+custom_minimum_size = Vector2(2.08165e-12, 2.08165e-12)
 layout_mode = 2
-alignment = 1
+offset_left = 139.0
+offset_top = 856.0
+offset_right = 799.0
+offset_bottom = 1475.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_p15yk")
+theme_override_styles/hover = SubResource("StyleBoxFlat_klp37")
 
-[node name="Row1" type="HBoxContainer" parent="MainContainer1/GameContainers"]
-custom_minimum_size = Vector2(2050, 500)
+[node name="toArchery" type="Button" parent="."]
+custom_minimum_size = Vector2(2.08165e-12, 2.08165e-12)
 layout_mode = 2
-alignment = 1
+offset_left = 1625.0
+offset_top = 182.0
+offset_right = 2285.0
+offset_bottom = 801.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_p15yk")
+theme_override_styles/hover = SubResource("StyleBoxFlat_klp37")
 
-[node name="toConnectFour" type="Button" parent="MainContainer1/GameContainers/Row1"]
-custom_minimum_size = Vector2(500, 500)
+[node name="toPong" type="Button" parent="."]
+custom_minimum_size = Vector2(2.08165e-12, 2.08165e-12)
 layout_mode = 2
-text = "CONNECT FOUR"
+offset_left = 1629.0
+offset_top = 862.0
+offset_right = 2289.0
+offset_bottom = 1481.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_p15yk")
+theme_override_styles/hover = SubResource("StyleBoxFlat_klp37")
 
-[node name="AspectRatioContainer" type="AspectRatioContainer" parent="MainContainer1/GameContainers/Row1"]
-custom_minimum_size = Vector2(120, 2.08165e-12)
-layout_mode = 2
-
-[node name="toArchery" type="Button" parent="MainContainer1/GameContainers/Row1"]
-custom_minimum_size = Vector2(500, 500)
-layout_mode = 2
-text = "Archery"
-
-[node name="AspectRatioContainer2" type="AspectRatioContainer" parent="MainContainer1/GameContainers/Row1"]
-custom_minimum_size = Vector2(120, 2.08165e-12)
-layout_mode = 2
-
-[node name="toPong" type="Button" parent="MainContainer1/GameContainers/Row1"]
-custom_minimum_size = Vector2(500, 500)
-layout_mode = 2
-text = "Pong"
-
-[node name="AspectRatioContainer" type="AspectRatioContainer" parent="MainContainer1/GameContainers"]
-custom_minimum_size = Vector2(2.08165e-12, 120)
-layout_mode = 2
-
-[node name="Row2" type="HBoxContainer" parent="MainContainer1/GameContainers"]
-custom_minimum_size = Vector2(2050, 500)
-layout_mode = 2
-alignment = 1
-
-[node name="toArchery" type="Button" parent="MainContainer1/GameContainers/Row2"]
-custom_minimum_size = Vector2(500, 500)
-layout_mode = 2
-
-[node name="AspectRatioContainer" type="AspectRatioContainer" parent="MainContainer1/GameContainers/Row2"]
-custom_minimum_size = Vector2(120, 2.08165e-12)
-layout_mode = 2
-
-[node name="toPool" type="Button" parent="MainContainer1/GameContainers/Row2"]
-custom_minimum_size = Vector2(500, 500)
-layout_mode = 2
-
-[node name="AspectRatioContainer2" type="AspectRatioContainer" parent="MainContainer1/GameContainers/Row2"]
-custom_minimum_size = Vector2(120, 2.08165e-12)
-layout_mode = 2
-
-[node name="toFlappyBird" type="Button" parent="MainContainer1/GameContainers/Row2"]
-custom_minimum_size = Vector2(500, 500)
-layout_mode = 2
-
-[node name="RightButton" type="Button" parent="MainContainer1"]
-visible = false
-custom_minimum_size = Vector2(120, 120)
-layout_mode = 2
-size_flags_vertical = 4
-theme_override_font_sizes/font_size = 50
-text = ">"
-
-[connection signal="pressed" from="MainContainer1/GameContainers/Row1/toConnectFour" to="." method="_on_to_connect_four_pressed"]
-[connection signal="pressed" from="MainContainer1/GameContainers/Row1/toArchery" to="." method="_on_to_archery_pressed"]
-[connection signal="pressed" from="MainContainer1/GameContainers/Row1/toPong" to="." method="_on_to_pong_pressed"]
+[connection signal="pressed" from="toConnectFour" to="." method="_on_to_connect_four_pressed"]
+[connection signal="pressed" from="toTicTacToe" to="." method="_on_to_tic_tac_toe_pressed"]
+[connection signal="pressed" from="toArchery" to="." method="_on_to_archery_pressed"]
+[connection signal="pressed" from="toPong" to="." method="_on_to_pong_pressed"]
