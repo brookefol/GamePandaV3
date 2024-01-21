@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://jtlhs4vg0b4j"]
 
-[ext_resource type="Texture2D" uid="uid://5nfd7awm3t8s" path="res://images/ArcheryBoard.png" id="1_0jc7l"]
+[ext_resource type="Texture2D" uid="uid://cd3peknw1a6kx" path="res://images/ArcheryBoard.png" id="1_0jc7l"]
 
 [node name="Archery" type="Control"]
 layout_mode = 3
@@ -10,7 +10,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="Background" type="TextureRect" parent="."]
 layout_mode = 0
 offset_right = 1615.0
 offset_bottom = 1080.0
