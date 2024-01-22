@@ -25,23 +25,6 @@ offset_right = 2400.0
 offset_bottom = 1600.0
 texture = ExtResource("2_mq1jq")
 
-[node name="Title" type="RichTextLabel" parent="."]
-custom_minimum_size = Vector2(1000, 2.08165e-12)
-layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -500.0
-offset_top = 72.0
-offset_right = 500.0
-offset_bottom = 271.0
-grow_horizontal = 2
-theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/normal_font_size = 100
-theme_override_font_sizes/bold_font_size = 120
-bbcode_enabled = true
-text = "[center][b]Navigation[/b][/center]"
-
 [node name="toConnectFour" type="Button" parent="."]
 custom_minimum_size = Vector2(2.08165e-12, 2.08165e-12)
 layout_mode = 2
