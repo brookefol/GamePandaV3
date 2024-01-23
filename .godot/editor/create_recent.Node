@@ -1,3 +1,10 @@
+CollisionShape2D
+Sprite2D
+CharacterBody2D
+ColorRect
+StaticBody2D
+Node
+Control
 TextureRect
 Button
 VBoxContainer

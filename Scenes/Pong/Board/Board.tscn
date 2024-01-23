@@ -1,0 +1,44 @@
+[gd_scene load_steps=6 format=3 uid="uid://calm0cwtd76gs"]
+
+[ext_resource type="PackedScene" uid="uid://xdvgyk33qynt" path="res://Scenes/Pong/Player1/Player1.tscn" id="1_ua16q"]
+[ext_resource type="PackedScene" uid="uid://dtu1trjqxk8kq" path="res://Scenes/Pong/Player2/Player2.tscn" id="2_w7ekf"]
+[ext_resource type="PackedScene" uid="uid://prwqwiqqekt7" path="res://Scenes/Pong/Ball/Ball.tscn" id="3_hinkb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5lovf"]
+size = Vector2(2000, 15)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6duan"]
+size = Vector2(1996, 24)
+
+[node name="Board" type="Node"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 1, 0.870588, 1)
+
+[node name="TopWall" type="StaticBody2D" parent="."]
+position = Vector2(-3, 0)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TopWall"]
+position = Vector2(1001, -8)
+shape = SubResource("RectangleShape2D_5lovf")
+
+[node name="BottomWall" type="StaticBody2D" parent="."]
+position = Vector2(20, 1418)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BottomWall"]
+position = Vector2(986, -1)
+shape = SubResource("RectangleShape2D_6duan")
+
+[node name="Player1" parent="." instance=ExtResource("1_ua16q")]
+
+[node name="Player2" parent="." instance=ExtResource("2_w7ekf")]
+position = Vector2(1857, 576)
+
+[node name="Ball" parent="." instance=ExtResource("3_hinkb")]

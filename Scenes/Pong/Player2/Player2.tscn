@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://dtu1trjqxk8kq"]
+
+[ext_resource type="Script" path="res://Scenes/Pong/Player2/Player2.gd" id="1_m2d0t"]
+[ext_resource type="Texture2D" uid="uid://bm3loo25fyrtc" path="res://images/bamboo-removebg-preview.png" id="1_tve34"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jes7w"]
+size = Vector2(27, 212.563)
+
+[node name="Player2" type="CharacterBody2D"]
+position = Vector2(0, -44)
+script = ExtResource("1_m2d0t")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-6, -2)
+scale = Vector2(0.875, 0.744)
+texture = ExtResource("1_tve34")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-17.5, -0.28125)
+shape = SubResource("RectangleShape2D_jes7w")
+metadata/_edit_group_ = true

@@ -6,3 +6,17 @@ res://navigation.gd
 res://start_menu.gd
 res://control.tscn
 res://pong.tscn
+res://pong.gd
+res://Scenes/Pong/pong.tscn
+res://Scenes/pong.tscn
+res://Scenes/Pong/Paddle1.tscn
+res://Scenes/Pong/Board/Board.tscn
+res://Scenes/Pong/Paddle1/Paddle1.tscn
+res://Scenes/Pong/Paddle1/Paddle1.gd
+res://Scenes/Pong/Player2/Player2.tscn
+res://Scenes/Pong/Ball/Ball.tscn
+res://Scenes/Pong/Ball/Ball.gd
+res://Scenes/Pong/Player1/Paddle1.tscn
+res://Scenes/Pong/Player1/Player1.tscn
+res://Scenes/Pong/Player1/Player1.gd
+res://Scenes/Pong/Player2/Player2.gd
