@@ -1,8 +1,10 @@
-[gd_scene load_steps=16 format=3 uid="uid://c5l7gbg4j7gs"]
+[gd_scene load_steps=18 format=3 uid="uid://c5l7gbg4j7gs"]
 
 [ext_resource type="Script" path="res://connect_four.gd" id="1_g5cus"]
 [ext_resource type="Texture2D" uid="uid://dqgbvgnok43k6" path="res://images/GamePandaBackgroundv01.png" id="1_sf51l"]
 [ext_resource type="Texture2D" uid="uid://dhoj2oh6dn8wd" path="res://images/ConnectFourBoardv01.png" id="2_6p7gf"]
+[ext_resource type="Texture2D" uid="uid://chavthefa12ne" path="res://Albert Einstein.png" id="3_dc30y"]
+[ext_resource type="Script" path="res://Scenes/TextureButton.gd" id="4_fcpwr"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1wk6u"]
 bg_color = Color(1, 0.866667, 0, 1)
@@ -54,6 +56,16 @@ layout_mode = 0
 offset_right = 2000.0
 offset_bottom = 1600.0
 texture = ExtResource("1_sf51l")
+
+[node name="TextureButton" type="TextureButton" parent="Background"]
+layout_mode = 0
+offset_left = 1634.0
+offset_top = 14.0
+offset_right = 2814.0
+offset_bottom = 1425.0
+scale = Vector2(0.762633, 0.52137)
+texture_normal = ExtResource("3_dc30y")
+script = ExtResource("4_fcpwr")
 
 [node name="GridContainer" type="GridContainer" parent="."]
 layout_mode = 1

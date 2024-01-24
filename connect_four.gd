@@ -80,6 +80,8 @@ func _dropChip(column):
 	playerTurn += 1
 	_winCheck()
 
-
+func _on_texture_pressed():
+	get_tree().change_scene_to_file("res://Scenes/navigation.tscn")
+	
 func _on_back_button_pressed():
 	get_tree().change_scene_to_file("res://navigation.tscn") # Replace with function body.
