@@ -1,16 +1,24 @@
-[gd_scene load_steps=6 format=3 uid="uid://calm0cwtd76gs"]
+[gd_scene load_steps=11 format=3 uid="uid://calm0cwtd76gs"]
 
+[ext_resource type="Script" path="res://Scenes/Pong/Board/Board.gd" id="1_hh4te"]
 [ext_resource type="PackedScene" uid="uid://xdvgyk33qynt" path="res://Scenes/Pong/Player1/Player1.tscn" id="1_ua16q"]
+[ext_resource type="FontFile" uid="uid://dunb3j8xxld7a" path="res://images/Go Panda.ttf" id="2_30nxj"]
 [ext_resource type="PackedScene" uid="uid://dtu1trjqxk8kq" path="res://Scenes/Pong/Player2/Player2.tscn" id="2_w7ekf"]
 [ext_resource type="PackedScene" uid="uid://prwqwiqqekt7" path="res://Scenes/Pong/Ball/Ball.tscn" id="3_hinkb"]
+[ext_resource type="Script" path="res://Scenes/Pong/Board/Exit.gd" id="3_wgefv"]
+[ext_resource type="AudioStream" uid="uid://1jcui3i4xfs1" path="res://images/Score_Sound.mp3" id="6_f58wx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5lovf"]
-size = Vector2(2000, 15)
+size = Vector2(1922, 15)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6duan"]
-size = Vector2(1996, 24)
+size = Vector2(1918, 24)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_53d0b"]
+size = Vector2(68, 1073)
 
 [node name="Board" type="Node"]
+script = ExtResource("1_hh4te")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 anchors_preset = 15
@@ -20,20 +28,70 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(1, 1, 0.870588, 1)
 
+[node name="Player1Score" type="Label" parent="."]
+offset_left = 850.0
+offset_top = 540.0
+theme_override_colors/font_color = Color(0, 0.403922, 0, 1)
+theme_override_fonts/font = ExtResource("2_30nxj")
+theme_override_font_sizes/font_size = 50
+text = "0"
+
+[node name="Player2Score" type="Label" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_top = 540.0
+offset_right = -850.0
+grow_horizontal = 0
+theme_override_colors/font_color = Color(0, 0.403922, 0, 1)
+theme_override_fonts/font = ExtResource("2_30nxj")
+theme_override_font_sizes/font_size = 50
+text = "0"
+horizontal_alignment = 2
+
+[node name="TimerDisplay" type="Label" parent="."]
+visible = false
+offset_left = 825.0
+offset_top = 300.0
+offset_right = 850.0
+offset_bottom = 353.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_30nxj")
+theme_override_font_sizes/font_size = 50
+text = "0"
+horizontal_alignment = 1
+
+[node name="Exit" type="Button" parent="."]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -74.5
+offset_top = -31.0
+offset_right = 74.5
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_30nxj")
+theme_override_font_sizes/font_size = 50
+text = "Exit to Main Menu"
+script = ExtResource("3_wgefv")
+
 [node name="TopWall" type="StaticBody2D" parent="."]
 position = Vector2(-3, 0)
 metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TopWall"]
-position = Vector2(1001, -8)
+position = Vector2(962, -8)
 shape = SubResource("RectangleShape2D_5lovf")
 
 [node name="BottomWall" type="StaticBody2D" parent="."]
-position = Vector2(20, 1418)
+position = Vector2(13, 1092)
 metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="BottomWall"]
-position = Vector2(986, -1)
+position = Vector2(947, -1)
 shape = SubResource("RectangleShape2D_6duan")
 
 [node name="Player1" parent="." instance=ExtResource("1_ua16q")]
@@ -42,3 +100,31 @@ shape = SubResource("RectangleShape2D_6duan")
 position = Vector2(1857, 576)
 
 [node name="Ball" parent="." instance=ExtResource("3_hinkb")]
+
+[node name="LeftWall" type="Area2D" parent="."]
+position = Vector2(-12, 913)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LeftWall"]
+position = Vector2(-24, -374.5)
+shape = SubResource("RectangleShape2D_53d0b")
+
+[node name="RightWall" type="Area2D" parent="."]
+position = Vector2(1980, 913)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RightWall"]
+position = Vector2(-24, -374.5)
+shape = SubResource("RectangleShape2D_53d0b")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+
+[node name="ScoreSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_f58wx")
+
+[connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]
+[connection signal="body_entered" from="LeftWall" to="." method="_on_left_wall_body_entered"]
+[connection signal="body_entered" from="RightWall" to="." method="_on_right_wall_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

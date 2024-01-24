@@ -4,5 +4,5 @@
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer"]
 stream = ExtResource("1_uf7k8")
-volume_db = 0.54
+volume_db = 0.2
 autoplay = true

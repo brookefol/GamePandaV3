@@ -16,7 +16,7 @@ func _on_to_connect_four_pressed():
 
 
 func _on_to_pong_pressed():
-	get_tree().change_scene_to_file("res://Scenes/pong.tscn") # Replace with function body.
+	get_tree().change_scene_to_file("res://Scenes/Pong/Board/Board.tscn") # Replace with function body.
 
 
 func _on_to_archery_pressed():

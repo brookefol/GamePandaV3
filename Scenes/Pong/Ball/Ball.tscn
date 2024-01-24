@@ -1,12 +1,13 @@
-[gd_scene load_steps=4 format=3 uid="uid://prwqwiqqekt7"]
+[gd_scene load_steps=5 format=3 uid="uid://prwqwiqqekt7"]
 
 [ext_resource type="Texture2D" uid="uid://can25qsif1ft8" path="res://images/panda_ball-cropped.png" id="1_1n1ne"]
 [ext_resource type="Script" path="res://Scenes/Pong/Ball/Ball.gd" id="1_j8bwn"]
+[ext_resource type="AudioStream" uid="uid://bc6jvda4ode5c" path="res://images/Paddle Ball Hit Sound Effect HD.mp3" id="3_qbney"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_81nvx"]
 radius = 50.6266
 
-[node name="Ball" type="CharacterBody2D"]
+[node name="Ball" type="CharacterBody2D" groups=["BallGroup"]]
 position = Vector2(531, 365)
 script = ExtResource("1_j8bwn")
 metadata/_edit_group_ = true
@@ -20,3 +21,6 @@ texture = ExtResource("1_1n1ne")
 position = Vector2(65.5, -70.5)
 scale = Vector2(0.636111, 0.608333)
 shape = SubResource("CircleShape2D_81nvx")
+
+[node name="PaddleHitSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_qbney")
