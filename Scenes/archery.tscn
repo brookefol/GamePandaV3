@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://bg76yxywjbh1q"]
+[gd_scene load_steps=5 format=3 uid="uid://bg76yxywjbh1q"]
 
 [ext_resource type="Script" path="res://archery.gd" id="1_7yrqa"]
 [ext_resource type="Texture2D" uid="uid://5nfd7awm3t8s" path="res://images/ArcheryBoard.png" id="2_3d8ot"]
+[ext_resource type="Texture2D" uid="uid://dfvg0h5dkwabe" path="res://images/redX.png" id="3_dal3m"]
+[ext_resource type="Texture2D" uid="uid://dc4not4l2qw5i" path="res://images/back.png" id="4_xwe8p"]
 
 [node name="Archery" type="Control"]
 layout_mode = 3
@@ -14,6 +16,53 @@ script = ExtResource("1_7yrqa")
 
 [node name="Background" type="TextureRect" parent="."]
 layout_mode = 0
-offset_right = 1637.0
-offset_bottom = 969.0
+offset_right = 1518.0
+offset_bottom = 972.0
 texture = ExtResource("2_3d8ot")
+expand_mode = 1
+
+[node name="PlayerOneScore" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 321.0
+offset_top = 27.0
+offset_right = 424.0
+offset_bottom = 130.0
+theme_override_font_sizes/font_size = 75
+text = "0"
+horizontal_alignment = 1
+
+[node name="PlayerTwoScore" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 1355.0
+offset_top = 27.0
+offset_right = 1458.0
+offset_bottom = 130.0
+theme_override_font_sizes/font_size = 75
+text = "0"
+horizontal_alignment = 1
+
+[node name="TargetX" type="Sprite2D" parent="."]
+position = Vector2(443, 212)
+scale = Vector2(0.545139, 0.558219)
+texture = ExtResource("3_dal3m")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 1130.0
+offset_top = 878.0
+offset_right = 1413.0
+offset_bottom = 960.0
+texture = ExtResource("4_xwe8p")
+expand_mode = 1
+
+[node name="back" type="Button" parent="."]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_left = 1124.0
+offset_top = 875.0
+offset_right = 1408.0
+offset_bottom = 964.0
+
+[connection signal="pressed" from="back" to="." method="_on_back_pressed"]
