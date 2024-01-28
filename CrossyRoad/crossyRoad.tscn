@@ -1,10 +1,10 @@
 [gd_scene load_steps=6 format=3 uid="uid://0d0mtnsrn517"]
 
 [ext_resource type="Script" path="res://CrossyRoad/crossyRoad.gd" id="1_k88si"]
-[ext_resource type="Texture2D" uid="uid://deedochmjj02b" path="res://CrossyRoad/CrossyRoadWallpaper.jpg" id="1_u80ii"]
-[ext_resource type="Texture2D" uid="uid://cy7m5ohx5i4kb" path="res://CrossyRoad/CrossyRoadPandaCars.png" id="2_2xwa1"]
-[ext_resource type="Texture2D" uid="uid://ds6tsajkq4a4w" path="res://CrossyRoad/RedRPanda.png" id="3_himus"]
-[ext_resource type="Texture2D" uid="uid://pix45fdpnu7k" path="res://CrossyRoad/BlueRPanda.png" id="4_gicb3"]
+[ext_resource type="Texture2D" uid="uid://blnpktgunqs1n" path="res://CrossyRoad/CrossyRoadWallpaper.jpg" id="1_u80ii"]
+[ext_resource type="Texture2D" uid="uid://brlum2f6dcnod" path="res://CrossyRoad/CrossyRoadPandaCars.png" id="2_2xwa1"]
+[ext_resource type="Texture2D" uid="uid://b6h2eceaoc2m4" path="res://CrossyRoad/RedRPanda.png" id="3_himus"]
+[ext_resource type="Texture2D" uid="uid://bnmomwhhmgxh0" path="res://CrossyRoad/BlueRPanda.png" id="4_gicb3"]
 
 [node name="CrossyRoad" type="Control"]
 layout_mode = 3
