@@ -1,11 +1,13 @@
-[gd_scene load_steps=7 format=3 uid="uid://0d0mtnsrn517"]
+[gd_scene load_steps=9 format=3 uid="uid://0d0mtnsrn517"]
 
 [ext_resource type="Script" path="res://CrossyRoad/crossyRoad.gd" id="1_k88si"]
-[ext_resource type="Texture2D" uid="uid://dsk2x4k44ybw8" path="res://CrossyRoad/CrossyRoadWallpaper.jpg" id="1_u80ii"]
-[ext_resource type="Texture2D" uid="uid://1fb38lgon18y" path="res://CrossyRoad/CrossyRoadPandaCars.png" id="2_2xwa1"]
-[ext_resource type="Texture2D" uid="uid://dh32ab4y0ij0i" path="res://CrossyRoad/RedRPanda.png" id="3_himus"]
-[ext_resource type="Texture2D" uid="uid://b0fsv6usdpgon" path="res://CrossyRoad/BlueRPanda.png" id="4_gicb3"]
-[ext_resource type="Texture2D" uid="uid://csaiv46anjuw6" path="res://CrossyRoad/CrossyRoadInstructions.png" id="6_fcymm"]
+[ext_resource type="Texture2D" uid="uid://c8b66rfncqgbr" path="res://CrossyRoad/CrossyRoadWallpaper.jpg" id="1_u80ii"]
+[ext_resource type="Texture2D" uid="uid://dh1p7tigpx5lj" path="res://CrossyRoad/CrossyRoadPandaCars.png" id="2_2xwa1"]
+[ext_resource type="Texture2D" uid="uid://bnaochjomvnsk" path="res://CrossyRoad/RedRPanda.png" id="3_himus"]
+[ext_resource type="Texture2D" uid="uid://bit47ytk7bit" path="res://CrossyRoad/BlueRPanda.png" id="4_gicb3"]
+[ext_resource type="Texture2D" uid="uid://re51kqqylj8t" path="res://CrossyRoad/CrossyRoadInstructions.png" id="6_fcymm"]
+[ext_resource type="Texture2D" uid="uid://b6eiai28mxsho" path="res://CrossyRoad/CrossyRoadPlayerOneWins.png" id="7_23r0b"]
+[ext_resource type="Texture2D" uid="uid://htvec6opniv6" path="res://CrossyRoad/CrossyRoadPlayerTwoWins.png" id="8_m5wtj"]
 
 [node name="CrossyRoad" type="Control"]
 layout_mode = 3
@@ -70,3 +72,21 @@ offset_right = 1307.0
 offset_bottom = 851.0
 texture = ExtResource("6_fcymm")
 expand_mode = 1
+
+[node name="PlayerOneWins" type="TextureRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 423.0
+offset_top = 272.0
+offset_right = 1201.0
+offset_bottom = 796.0
+texture = ExtResource("7_23r0b")
+
+[node name="PlayerTwoWins" type="TextureRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 423.0
+offset_top = 272.0
+offset_right = 1201.0
+offset_bottom = 796.0
+texture = ExtResource("8_m5wtj")

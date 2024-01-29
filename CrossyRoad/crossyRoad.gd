@@ -15,6 +15,8 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	var instructions = $Instructions
+	var playerOne = $Player1
+	var playerTwo = $Player2
 	if (Input.is_key_pressed(KEY_ENTER)):
 		instructions.visible = false;
 		start = true
@@ -22,6 +24,14 @@ func _process(delta):
 		_carMovement();
 		_playerOneMovement();
 		_playerTwoMovement();
+	if (playerOne.position.y <= 5):
+		var win = $PlayerOneWins
+		win.visible = true
+		start = false
+	if (playerTwo.position.y <= 5):
+		var win = $PlayerTwoWins
+		win.visible = true
+		start = false
 	pass
 
 func _carMovement():
