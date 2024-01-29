@@ -1,6 +1,7 @@
 extends Control
 
 var pandaCars = []
+var start = false;
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -13,9 +14,14 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	_carMovement();
-	_playerOneMovement();
-	_playerTwoMovement();
+	var instructions = $Instructions
+	if (Input.is_key_pressed(KEY_ENTER)):
+		instructions.visible = false;
+		start = true
+	if (start== true):
+		_carMovement();
+		_playerOneMovement();
+		_playerTwoMovement();
 	pass
 
 func _carMovement():
