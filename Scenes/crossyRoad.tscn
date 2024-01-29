@@ -1,14 +1,14 @@
 [gd_scene load_steps=10 format=3 uid="uid://0d0mtnsrn517"]
 
 [ext_resource type="Script" path="res://crossyRoad.gd" id="1_071oq"]
-[ext_resource type="Texture2D" uid="uid://b38fofaimaxj3" path="res://images/CrossyRoadWallpaper.jpg" id="2_7fyj5"]
-[ext_resource type="Texture2D" uid="uid://iyk4txq48y6k" path="res://images/CrossyRoadPandaCars.png" id="3_d1rvc"]
-[ext_resource type="Texture2D" uid="uid://bos4vk40j5htw" path="res://images/RedRPanda.png" id="4_cw2oh"]
-[ext_resource type="Texture2D" uid="uid://cfbxdf1fht4nh" path="res://images/BlueRPanda.png" id="5_pidj2"]
-[ext_resource type="Texture2D" uid="uid://dpjps6wpwre0q" path="res://images/CrossyRoadInstructions.png" id="6_trnk5"]
-[ext_resource type="Texture2D" uid="uid://br6bfmp7qbcpy" path="res://images/CrossyRoadPlayerOneWins.png" id="7_jvoyi"]
-[ext_resource type="Texture2D" uid="uid://5t2hkteyb5en" path="res://images/CrossyRoadPlayerTwoWins.png" id="8_7rir3"]
-[ext_resource type="Texture2D" uid="uid://y7wfouc5hk0o" path="res://images/back.png" id="9_shnre"]
+[ext_resource type="Texture2D" uid="uid://cqamunxncn2pv" path="res://images/CrossyRoadWallpaper.jpg" id="2_7fyj5"]
+[ext_resource type="Texture2D" uid="uid://4rkk1as2l7rg" path="res://images/CrossyRoadPandaCars.png" id="3_d1rvc"]
+[ext_resource type="Texture2D" uid="uid://beemulradjmac" path="res://images/RedRPanda.png" id="4_cw2oh"]
+[ext_resource type="Texture2D" uid="uid://bsmntobnhgkxv" path="res://images/BlueRPanda.png" id="5_pidj2"]
+[ext_resource type="Texture2D" uid="uid://dj757ime7k41r" path="res://images/CrossyRoadInstructions.png" id="6_trnk5"]
+[ext_resource type="Texture2D" uid="uid://dxkv21feiy00" path="res://images/CrossyRoadPlayerOneWins.png" id="7_jvoyi"]
+[ext_resource type="Texture2D" uid="uid://b84vne1io7ddr" path="res://images/CrossyRoadPlayerTwoWins.png" id="8_7rir3"]
+[ext_resource type="Texture2D" uid="uid://1jolc7qfx7bc" path="res://images/back.png" id="9_shnre"]
 
 [node name="CrossyRoad" type="Control"]
 layout_mode = 3
