@@ -1,13 +1,13 @@
 [gd_scene load_steps=9 format=3 uid="uid://0d0mtnsrn517"]
 
-[ext_resource type="Script" path="res://CrossyRoad/crossyRoad.gd" id="1_k88si"]
-[ext_resource type="Texture2D" uid="uid://c8b66rfncqgbr" path="res://CrossyRoad/CrossyRoadWallpaper.jpg" id="1_u80ii"]
-[ext_resource type="Texture2D" uid="uid://dh1p7tigpx5lj" path="res://CrossyRoad/CrossyRoadPandaCars.png" id="2_2xwa1"]
-[ext_resource type="Texture2D" uid="uid://bnaochjomvnsk" path="res://CrossyRoad/RedRPanda.png" id="3_himus"]
-[ext_resource type="Texture2D" uid="uid://bit47ytk7bit" path="res://CrossyRoad/BlueRPanda.png" id="4_gicb3"]
-[ext_resource type="Texture2D" uid="uid://re51kqqylj8t" path="res://CrossyRoad/CrossyRoadInstructions.png" id="6_fcymm"]
-[ext_resource type="Texture2D" uid="uid://b6eiai28mxsho" path="res://CrossyRoad/CrossyRoadPlayerOneWins.png" id="7_23r0b"]
-[ext_resource type="Texture2D" uid="uid://htvec6opniv6" path="res://CrossyRoad/CrossyRoadPlayerTwoWins.png" id="8_m5wtj"]
+[ext_resource type="Script" path="res://crossyRoad.gd" id="1_071oq"]
+[ext_resource type="Texture2D" uid="uid://cmrrnktaelnsu" path="res://images/CrossyRoadWallpaper.jpg" id="2_7fyj5"]
+[ext_resource type="Texture2D" uid="uid://ke14jeuogiyx" path="res://images/CrossyRoadPandaCars.png" id="3_d1rvc"]
+[ext_resource type="Texture2D" uid="uid://yx48kjuvwafg" path="res://images/RedRPanda.png" id="4_cw2oh"]
+[ext_resource type="Texture2D" uid="uid://d4hm1kxed8inp" path="res://images/BlueRPanda.png" id="5_pidj2"]
+[ext_resource type="Texture2D" uid="uid://c888pfx13yutf" path="res://images/CrossyRoadInstructions.png" id="6_trnk5"]
+[ext_resource type="Texture2D" uid="uid://dfgxpc8yr4f0e" path="res://images/CrossyRoadPlayerOneWins.png" id="7_jvoyi"]
+[ext_resource type="Texture2D" uid="uid://cgag1nmtg187e" path="res://images/CrossyRoadPlayerTwoWins.png" id="8_7rir3"]
 
 [node name="CrossyRoad" type="Control"]
 layout_mode = 3
@@ -16,53 +16,53 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_k88si")
+script = ExtResource("1_071oq")
 
 [node name="background" type="TextureRect" parent="."]
 layout_mode = 0
 offset_right = 1639.0
 offset_bottom = 1025.0
-texture = ExtResource("1_u80ii")
+texture = ExtResource("2_7fyj5")
 
 [node name="pandaCar1" type="Sprite2D" parent="." groups=["pandaCars"]]
 position = Vector2(92.5, 218.75)
 scale = Vector2(0.326172, 0.297851)
-texture = ExtResource("2_2xwa1")
+texture = ExtResource("3_d1rvc")
 
 [node name="pandaCar2" type="Sprite2D" parent="." groups=["pandaCars"]]
 position = Vector2(910, 355)
 scale = Vector2(0.326172, 0.297851)
-texture = ExtResource("2_2xwa1")
+texture = ExtResource("3_d1rvc")
 
 [node name="pandaCar3" type="Sprite2D" parent="." groups=["pandaCars"]]
 position = Vector2(1503, 462)
 scale = Vector2(0.326172, 0.297851)
-texture = ExtResource("2_2xwa1")
+texture = ExtResource("3_d1rvc")
 
 [node name="pandaCar4" type="Sprite2D" parent="." groups=["pandaCars"]]
 position = Vector2(919, 610)
 scale = Vector2(0.326172, 0.297851)
-texture = ExtResource("2_2xwa1")
+texture = ExtResource("3_d1rvc")
 
 [node name="pandaCar5" type="Sprite2D" parent="." groups=["pandaCars"]]
 position = Vector2(103, 716)
 scale = Vector2(0.326172, 0.297851)
-texture = ExtResource("2_2xwa1")
+texture = ExtResource("3_d1rvc")
 
 [node name="pandaCar6" type="Sprite2D" parent="." groups=["pandaCars"]]
 position = Vector2(1501, 782)
 scale = Vector2(0.326172, 0.297851)
-texture = ExtResource("2_2xwa1")
+texture = ExtResource("3_d1rvc")
 
 [node name="Player1" type="Sprite2D" parent="."]
 position = Vector2(413.293, 920)
 scale = Vector2(0.46375, 0.562883)
-texture = ExtResource("3_himus")
+texture = ExtResource("4_cw2oh")
 
 [node name="Player2" type="Sprite2D" parent="."]
 position = Vector2(1169, 920)
 scale = Vector2(0.464, 0.563)
-texture = ExtResource("4_gicb3")
+texture = ExtResource("5_pidj2")
 
 [node name="Instructions" type="TextureRect" parent="."]
 layout_mode = 0
@@ -70,7 +70,7 @@ offset_left = 328.0
 offset_top = 216.0
 offset_right = 1307.0
 offset_bottom = 851.0
-texture = ExtResource("6_fcymm")
+texture = ExtResource("6_trnk5")
 expand_mode = 1
 
 [node name="PlayerOneWins" type="TextureRect" parent="."]
@@ -80,7 +80,7 @@ offset_left = 423.0
 offset_top = 272.0
 offset_right = 1201.0
 offset_bottom = 796.0
-texture = ExtResource("7_23r0b")
+texture = ExtResource("7_jvoyi")
 
 [node name="PlayerTwoWins" type="TextureRect" parent="."]
 visible = false
@@ -89,4 +89,4 @@ offset_left = 423.0
 offset_top = 272.0
 offset_right = 1201.0
 offset_bottom = 796.0
-texture = ExtResource("8_m5wtj")
+texture = ExtResource("8_7rir3")
