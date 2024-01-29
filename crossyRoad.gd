@@ -48,7 +48,7 @@ func _playerOneMovement():
 		playerOne.position.y+=10;
 	for panda in pandaCars:
 		if playerOne.position.x >= (panda.position.x-95) and playerOne.position.x<=(panda.position.x+95) and abs((panda.position.y-playerOne.position.y))<=85:
-			playerOne.position.y=920
+			playerOne.position.y=1500
 	
 func _playerTwoMovement():
 	var playerTwo = $Player2
@@ -58,7 +58,7 @@ func _playerTwoMovement():
 		playerTwo.position.y+=10;
 	for panda in pandaCars:
 		if playerTwo.position.x >= (panda.position.x-95) and playerTwo.position.x<=(panda.position.x+95) and abs((panda.position.y-playerTwo.position.y))<=85:
-			playerTwo.position.y=920
+			playerTwo.position.y=1500
 		
 	
 	

@@ -1,14 +1,14 @@
-[gd_scene load_steps=10 format=3 uid="uid://0d0mtnsrn517"]
+[gd_scene load_steps=10 format=3 uid="uid://dmnbske75j4pq"]
 
 [ext_resource type="Script" path="res://crossyRoad.gd" id="1_071oq"]
-[ext_resource type="Texture2D" uid="uid://cqamunxncn2pv" path="res://images/CrossyRoadWallpaper.jpg" id="2_7fyj5"]
-[ext_resource type="Texture2D" uid="uid://4rkk1as2l7rg" path="res://images/CrossyRoadPandaCars.png" id="3_d1rvc"]
-[ext_resource type="Texture2D" uid="uid://beemulradjmac" path="res://images/RedRPanda.png" id="4_cw2oh"]
-[ext_resource type="Texture2D" uid="uid://bsmntobnhgkxv" path="res://images/BlueRPanda.png" id="5_pidj2"]
-[ext_resource type="Texture2D" uid="uid://dj757ime7k41r" path="res://images/CrossyRoadInstructions.png" id="6_trnk5"]
-[ext_resource type="Texture2D" uid="uid://dxkv21feiy00" path="res://images/CrossyRoadPlayerOneWins.png" id="7_jvoyi"]
-[ext_resource type="Texture2D" uid="uid://b84vne1io7ddr" path="res://images/CrossyRoadPlayerTwoWins.png" id="8_7rir3"]
-[ext_resource type="Texture2D" uid="uid://1jolc7qfx7bc" path="res://images/back.png" id="9_shnre"]
+[ext_resource type="Texture2D" uid="uid://dcds6ek7cftcp" path="res://images/CrossyRoadWallpaper.jpg" id="2_7fyj5"]
+[ext_resource type="Texture2D" uid="uid://b84cvdlhbtm1m" path="res://images/CrossyRoadPandaCars.png" id="3_d1rvc"]
+[ext_resource type="Texture2D" uid="uid://cjk3c4f053nad" path="res://images/RedRPanda.png" id="4_cw2oh"]
+[ext_resource type="Texture2D" uid="uid://vs2fwersu2vw" path="res://images/BlueRPanda.png" id="5_pidj2"]
+[ext_resource type="Texture2D" uid="uid://b23g0vblgdi4x" path="res://images/CrossyRoadInstructions.png" id="6_trnk5"]
+[ext_resource type="Texture2D" uid="uid://pnh0gpq26oad" path="res://images/CrossyRoadPlayerOneWins.png" id="7_jvoyi"]
+[ext_resource type="Texture2D" uid="uid://dqfoshwpmohqm" path="res://images/CrossyRoadPlayerTwoWins.png" id="8_7rir3"]
+[ext_resource type="Texture2D" uid="uid://c0rg2umbw8gnc" path="res://images/back.png" id="9_shnre"]
 
 [node name="CrossyRoad" type="Control"]
 layout_mode = 3
@@ -21,92 +21,102 @@ script = ExtResource("1_071oq")
 
 [node name="background" type="TextureRect" parent="."]
 layout_mode = 0
-offset_right = 1639.0
-offset_bottom = 1025.0
+offset_right = 2411.0
+offset_bottom = 1634.0
 texture = ExtResource("2_7fyj5")
 
 [node name="pandaCar1" type="Sprite2D" parent="." groups=["pandaCars"]]
-position = Vector2(92.5, 218.75)
+position = Vector2(212, 435)
 scale = Vector2(0.326172, 0.297851)
 texture = ExtResource("3_d1rvc")
 
 [node name="pandaCar2" type="Sprite2D" parent="." groups=["pandaCars"]]
-position = Vector2(910, 355)
+position = Vector2(2052, 557)
 scale = Vector2(0.326172, 0.297851)
 texture = ExtResource("3_d1rvc")
 
 [node name="pandaCar3" type="Sprite2D" parent="." groups=["pandaCars"]]
-position = Vector2(1503, 462)
+position = Vector2(1129, 721)
 scale = Vector2(0.326172, 0.297851)
 texture = ExtResource("3_d1rvc")
 
 [node name="pandaCar4" type="Sprite2D" parent="." groups=["pandaCars"]]
-position = Vector2(919, 610)
+position = Vector2(1133, 1042)
 scale = Vector2(0.326172, 0.297851)
 texture = ExtResource("3_d1rvc")
 
 [node name="pandaCar5" type="Sprite2D" parent="." groups=["pandaCars"]]
-position = Vector2(103, 716)
+position = Vector2(223, 919)
 scale = Vector2(0.326172, 0.297851)
 texture = ExtResource("3_d1rvc")
 
 [node name="pandaCar6" type="Sprite2D" parent="." groups=["pandaCars"]]
-position = Vector2(1501, 782)
+position = Vector2(2109, 1150)
+scale = Vector2(0.326172, 0.297851)
+texture = ExtResource("3_d1rvc")
+
+[node name="pandaCar7" type="Sprite2D" parent="." groups=["pandaCars"]]
+position = Vector2(1498, 296)
+scale = Vector2(0.326172, 0.297851)
+texture = ExtResource("3_d1rvc")
+
+[node name="pandaCar8" type="Sprite2D" parent="." groups=["pandaCars"]]
+position = Vector2(596, 1274)
 scale = Vector2(0.326172, 0.297851)
 texture = ExtResource("3_d1rvc")
 
 [node name="Player1" type="Sprite2D" parent="."]
-position = Vector2(413.293, 920)
+position = Vector2(600, 1500)
 scale = Vector2(0.46375, 0.562883)
 texture = ExtResource("4_cw2oh")
 
 [node name="Player2" type="Sprite2D" parent="."]
-position = Vector2(1169, 920)
+position = Vector2(1700, 1500)
 scale = Vector2(0.464, 0.563)
 texture = ExtResource("5_pidj2")
 
 [node name="Instructions" type="TextureRect" parent="."]
 layout_mode = 0
-offset_left = 328.0
-offset_top = 216.0
-offset_right = 1307.0
-offset_bottom = 851.0
+offset_left = 675.0
+offset_top = 520.0
+offset_right = 1654.0
+offset_bottom = 1155.0
 texture = ExtResource("6_trnk5")
 expand_mode = 1
 
 [node name="PlayerOneWins" type="TextureRect" parent="."]
 visible = false
 layout_mode = 0
-offset_left = 423.0
-offset_top = 272.0
-offset_right = 1201.0
-offset_bottom = 796.0
+offset_left = 767.0
+offset_top = 595.0
+offset_right = 1545.0
+offset_bottom = 1119.0
 texture = ExtResource("7_jvoyi")
 
 [node name="PlayerTwoWins" type="TextureRect" parent="."]
 visible = false
 layout_mode = 0
-offset_left = 423.0
-offset_top = 272.0
-offset_right = 1201.0
-offset_bottom = 796.0
+offset_left = 770.0
+offset_top = 592.0
+offset_right = 1548.0
+offset_bottom = 1116.0
 texture = ExtResource("8_7rir3")
 
 [node name="BackBackground" type="TextureRect" parent="."]
 layout_mode = 0
-offset_left = 1366.0
-offset_top = 45.0
-offset_right = 1595.0
-offset_bottom = 110.0
+offset_left = 2073.0
+offset_top = 61.0
+offset_right = 2302.0
+offset_bottom = 126.0
 texture = ExtResource("9_shnre")
 expand_mode = 1
 
 [node name="Button" type="Button" parent="."]
 modulate = Color(1, 1, 1, 0)
 layout_mode = 0
-offset_left = 1366.0
-offset_top = 45.0
-offset_right = 1596.0
-offset_bottom = 111.0
+offset_left = 2076.0
+offset_top = 59.0
+offset_right = 2306.0
+offset_bottom = 125.0
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
