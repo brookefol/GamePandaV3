@@ -1,10 +1,10 @@
 [gd_scene load_steps=6 format=3 uid="uid://0d0mtnsrn517"]
 
 [ext_resource type="Script" path="res://CrossyRoad/crossyRoad.gd" id="1_k88si"]
-[ext_resource type="Texture2D" uid="uid://blnpktgunqs1n" path="res://CrossyRoad/CrossyRoadWallpaper.jpg" id="1_u80ii"]
-[ext_resource type="Texture2D" uid="uid://brlum2f6dcnod" path="res://CrossyRoad/CrossyRoadPandaCars.png" id="2_2xwa1"]
-[ext_resource type="Texture2D" uid="uid://b6h2eceaoc2m4" path="res://CrossyRoad/RedRPanda.png" id="3_himus"]
-[ext_resource type="Texture2D" uid="uid://bnmomwhhmgxh0" path="res://CrossyRoad/BlueRPanda.png" id="4_gicb3"]
+[ext_resource type="Texture2D" uid="uid://cdmvuhumrldwq" path="res://CrossyRoad/CrossyRoadWallpaper.jpg" id="1_u80ii"]
+[ext_resource type="Texture2D" uid="uid://rqcbdc51sblb" path="res://CrossyRoad/CrossyRoadPandaCars.png" id="2_2xwa1"]
+[ext_resource type="Texture2D" uid="uid://bxvu2esk1aodv" path="res://CrossyRoad/RedRPanda.png" id="3_himus"]
+[ext_resource type="Texture2D" uid="uid://mydqpcoorveu" path="res://CrossyRoad/BlueRPanda.png" id="4_gicb3"]
 
 [node name="CrossyRoad" type="Control"]
 layout_mode = 3
@@ -21,13 +21,13 @@ offset_right = 1639.0
 offset_bottom = 1025.0
 texture = ExtResource("1_u80ii")
 
-[node name="pandaCar2" type="Sprite2D" parent="." groups=["pandaCars"]]
-position = Vector2(910, 355)
+[node name="pandaCar1" type="Sprite2D" parent="." groups=["pandaCars"]]
+position = Vector2(92.5, 218.75)
 scale = Vector2(0.326172, 0.297851)
 texture = ExtResource("2_2xwa1")
 
-[node name="pandaCar1" type="Sprite2D" parent="." groups=["pandaCars"]]
-position = Vector2(92.5, 218.75)
+[node name="pandaCar2" type="Sprite2D" parent="." groups=["pandaCars"]]
+position = Vector2(910, 355)
 scale = Vector2(0.326172, 0.297851)
 texture = ExtResource("2_2xwa1")
 
@@ -52,11 +52,11 @@ scale = Vector2(0.326172, 0.297851)
 texture = ExtResource("2_2xwa1")
 
 [node name="Player1" type="Sprite2D" parent="."]
-position = Vector2(431, 920)
-scale = Vector2(0.585034, 0.647651)
+position = Vector2(413.293, 920)
+scale = Vector2(0.46375, 0.562883)
 texture = ExtResource("3_himus")
 
 [node name="Player2" type="Sprite2D" parent="."]
-position = Vector2(1169, 921)
-scale = Vector2(0.585034, 0.647651)
+position = Vector2(1169, 920)
+scale = Vector2(0.464, 0.563)
 texture = ExtResource("4_gicb3")

@@ -20,7 +20,7 @@ func _process(delta):
 
 func _carMovement():
 	for panda in pandaCars:
-		panda.position.x += 15;
+		panda.position.x += 20;
 		if (panda.position.x>=2400):
 			panda.position.x= 0
 
@@ -30,6 +30,9 @@ func _playerOneMovement():
 		playerOne.position.y-=10;
 	if Input.is_action_pressed("ui_down"):
 		playerOne.position.y+=10;
+	for panda in pandaCars:
+		if playerOne.position.x >= (panda.position.x-95) and playerOne.position.x<=(panda.position.x+95) and abs((panda.position.y-playerOne.position.y))<=85:
+			playerOne.position.y=920
 	
 func _playerTwoMovement():
 	var playerTwo = $Player2
@@ -37,4 +40,9 @@ func _playerTwoMovement():
 		playerTwo.position.y-=10;
 	if Input.is_key_pressed(KEY_B):
 		playerTwo.position.y+=10;
+	for panda in pandaCars:
+		if playerTwo.position.x >= (panda.position.x-95) and playerTwo.position.x<=(panda.position.x+95) and abs((panda.position.y-playerTwo.position.y))<=85:
+			playerTwo.position.y=920
+		
+	
 	
