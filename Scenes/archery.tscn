@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://byaxvuu7akfbb"]
+[gd_scene load_steps=9 format=3 uid="uid://c8hkm8csbpar7"]
 
 [ext_resource type="Script" path="res://archery.gd" id="1_6jsbo"]
 [ext_resource type="Texture2D" uid="uid://5nfd7awm3t8s" path="res://images/ArcheryBoard.png" id="2_0np5i"]
@@ -20,17 +20,17 @@ script = ExtResource("1_6jsbo")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 0
-offset_right = 1927.0
-offset_bottom = 1081.0
+offset_right = 2447.0
+offset_bottom = 1607.0
 texture = ExtResource("2_0np5i")
 
 [node name="PlayerOneScore" type="Label" parent="."]
 modulate = Color(0, 0, 0, 1)
 layout_mode = 0
-offset_left = 416.0
-offset_top = 51.0
-offset_right = 453.0
-offset_bottom = 77.0
+offset_left = 532.0
+offset_top = 71.0
+offset_right = 577.0
+offset_bottom = 111.0
 scale = Vector2(3, 3)
 text = "0"
 horizontal_alignment = 1
@@ -39,10 +39,10 @@ vertical_alignment = 1
 [node name="PlayerTwoScore" type="Label" parent="."]
 modulate = Color(0, 0, 0, 1)
 layout_mode = 0
-offset_left = 1734.0
-offset_top = 51.0
-offset_right = 1771.0
-offset_bottom = 77.0
+offset_left = 2196.0
+offset_top = 77.0
+offset_right = 2245.0
+offset_bottom = 116.0
 scale = Vector2(3, 3)
 text = "0"
 horizontal_alignment = 1
@@ -50,66 +50,66 @@ vertical_alignment = 1
 
 [node name="marker" type="Sprite2D" parent="."]
 z_index = 2
-position = Vector2(540, 220)
-scale = Vector2(0.559028, 0.506849)
+position = Vector2(667.25, 357)
+scale = Vector2(0.748264, 0.719178)
 texture = ExtResource("3_hmd43")
 
 [node name="backBackground" type="TextureRect" parent="."]
 layout_mode = 0
-offset_left = 1550.0
-offset_top = 978.0
-offset_right = 1785.0
-offset_bottom = 1060.0
+offset_left = 1980.0
+offset_top = 1478.0
+offset_right = 2215.0
+offset_bottom = 1560.0
 texture = ExtResource("4_78b4o")
 expand_mode = 1
 
 [node name="backButton" type="Button" parent="."]
 modulate = Color(1, 1, 1, 0)
 layout_mode = 0
-offset_left = 1550.0
-offset_top = 978.0
-offset_right = 1793.0
-offset_bottom = 1060.0
+offset_left = 1980.0
+offset_top = 1476.0
+offset_right = 2223.0
+offset_bottom = 1558.0
 
 [node name="center" type="Sprite2D" parent="."]
-position = Vector2(966, 541)
+position = Vector2(1228, 801)
 scale = Vector2(0.72695, 0.81405)
 texture = ExtResource("5_ccmpn")
 
 [node name="PlayerOneWins" type="TextureRect" parent="."]
 visible = false
 layout_mode = 0
-offset_left = 470.0
-offset_top = 187.0
-offset_right = 1449.0
-offset_bottom = 912.0
+offset_left = 636.0
+offset_top = 281.0
+offset_right = 1905.0
+offset_bottom = 1300.0
 texture = ExtResource("6_fa0xh")
 
 [node name="PlayerTwoWins" type="TextureRect" parent="."]
 visible = false
 layout_mode = 0
-offset_left = 470.0
-offset_top = 187.0
-offset_right = 1449.0
-offset_bottom = 912.0
+offset_left = 636.0
+offset_top = 285.0
+offset_right = 1907.0
+offset_bottom = 1298.0
 texture = ExtResource("7_uln2p")
 
 [node name="CurrentPlayerOne" type="TextureRect" parent="."]
 layout_mode = 0
 offset_left = 58.0
 offset_top = -41.0
-offset_right = 566.0
-offset_bottom = 209.0
+offset_right = 714.0
+offset_bottom = 305.0
 texture = ExtResource("8_7keyg")
 expand_mode = 1
 
 [node name="CurrentPlayerTwo" type="TextureRect" parent="."]
 visible = false
 layout_mode = 0
-offset_left = 1374.0
-offset_top = -39.0
-offset_right = 1882.0
-offset_bottom = 211.0
+offset_left = 1736.0
+offset_top = -27.0
+offset_right = 2388.0
+offset_bottom = 299.0
 texture = ExtResource("8_7keyg")
 expand_mode = 1
 
