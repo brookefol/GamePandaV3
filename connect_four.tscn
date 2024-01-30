@@ -1,0 +1,866 @@
+[gd_scene load_steps=18 format=3 uid="uid://kptvfb58xv0p"]
+
+[ext_resource type="Script" path="res://connect_four.gd" id="1_qsyxw"]
+[ext_resource type="Texture2D" uid="uid://dqgbvgnok43k6" path="res://images/GamePandaBackgroundv01.png" id="2_j35x5"]
+[ext_resource type="Texture2D" uid="uid://chavthefa12ne" path="res://Albert Einstein.png" id="3_nu5jc"]
+[ext_resource type="Texture2D" uid="uid://dhoj2oh6dn8wd" path="res://images/ConnectFourBoardv01.png" id="3_yxi4y"]
+[ext_resource type="Script" path="res://Scenes/TextureButton.gd" id="4_p8445"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1wk6u"]
+bg_color = Color(1, 0.866667, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mupqs"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w50pf"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_eyyra"]
+bg_color = Color(0, 1, 0, 0.662745)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vtnal"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v2136"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bk7l3"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2a7i8"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4eef1"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ciet1"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jopq0"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1dabp"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[node name="connectFour" type="Control"]
+custom_minimum_size = Vector2(2000, 1600)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_qsyxw")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 2000.0
+offset_bottom = 1600.0
+texture = ExtResource("2_j35x5")
+
+[node name="TextureButton" type="TextureButton" parent="Background"]
+layout_mode = 0
+offset_left = 1634.0
+offset_top = 14.0
+offset_right = 2814.0
+offset_bottom = 1425.0
+scale = Vector2(0.762633, 0.52137)
+texture_normal = ExtResource("3_nu5jc")
+script = ExtResource("4_p8445")
+
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -798.0
+offset_top = -1398.0
+offset_right = 803.0
+offset_bottom = -190.0
+grow_horizontal = 2
+grow_vertical = 0
+columns = 8
+
+[node name="00" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_1wk6u")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="01" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_1wk6u")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="02" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_1wk6u")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="03" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_1wk6u")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="04" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_1wk6u")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="05" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_1wk6u")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="06" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_1wk6u")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="07" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_1wk6u")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="10" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_1wk6u")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="11" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_1wk6u")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="12" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_1wk6u")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="13" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_1wk6u")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="14" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_1wk6u")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="15" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_1wk6u")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="16" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_1wk6u")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="17" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_1wk6u")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="20" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_1wk6u")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="21" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_1wk6u")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="22" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_1wk6u")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="23" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_1wk6u")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="24" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_1wk6u")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="25" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_1wk6u")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="26" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_1wk6u")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="27" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_1wk6u")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="30" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_1wk6u")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="31" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_1wk6u")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="32" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_1wk6u")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="33" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_1wk6u")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="34" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_1wk6u")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="35" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_1wk6u")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="36" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_1wk6u")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="37" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_1wk6u")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="40" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_1wk6u")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="41" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_1wk6u")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="42" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_1wk6u")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="43" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_1wk6u")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="44" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_1wk6u")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="45" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_1wk6u")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="46" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_1wk6u")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="47" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_1wk6u")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="50" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_1wk6u")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="51" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_1wk6u")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="52" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_1wk6u")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="53" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_1wk6u")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="54" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_1wk6u")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="55" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_1wk6u")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="56" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_1wk6u")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="57" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_1wk6u")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="GridContainer2" type="GridContainer" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -798.0
+offset_top = -1398.0
+offset_right = 803.0
+offset_bottom = -190.0
+grow_horizontal = 2
+grow_vertical = 0
+columns = 8
+
+[node name="00" type="Button" parent="GridContainer2"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_eyyra")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="01" type="Button" parent="GridContainer2"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_eyyra")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="02" type="Button" parent="GridContainer2"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_eyyra")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="03" type="Button" parent="GridContainer2"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_eyyra")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="04" type="Button" parent="GridContainer2"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_eyyra")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="05" type="Button" parent="GridContainer2"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_eyyra")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="06" type="Button" parent="GridContainer2"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_eyyra")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="07" type="Button" parent="GridContainer2"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_eyyra")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="10" type="Button" parent="GridContainer2"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_eyyra")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="11" type="Button" parent="GridContainer2"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_eyyra")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="12" type="Button" parent="GridContainer2"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_eyyra")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="13" type="Button" parent="GridContainer2"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_eyyra")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="14" type="Button" parent="GridContainer2"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_eyyra")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="15" type="Button" parent="GridContainer2"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_eyyra")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="16" type="Button" parent="GridContainer2"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_eyyra")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="17" type="Button" parent="GridContainer2"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_eyyra")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="20" type="Button" parent="GridContainer2"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_eyyra")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="21" type="Button" parent="GridContainer2"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_eyyra")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="22" type="Button" parent="GridContainer2"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_eyyra")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="23" type="Button" parent="GridContainer2"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_eyyra")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="24" type="Button" parent="GridContainer2"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_eyyra")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="25" type="Button" parent="GridContainer2"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_eyyra")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="26" type="Button" parent="GridContainer2"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_eyyra")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="27" type="Button" parent="GridContainer2"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_eyyra")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="30" type="Button" parent="GridContainer2"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_eyyra")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="31" type="Button" parent="GridContainer2"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_eyyra")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="32" type="Button" parent="GridContainer2"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_eyyra")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="33" type="Button" parent="GridContainer2"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_eyyra")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="34" type="Button" parent="GridContainer2"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_eyyra")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="35" type="Button" parent="GridContainer2"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_eyyra")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="36" type="Button" parent="GridContainer2"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_eyyra")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="37" type="Button" parent="GridContainer2"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_eyyra")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="40" type="Button" parent="GridContainer2"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_eyyra")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="41" type="Button" parent="GridContainer2"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_eyyra")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="42" type="Button" parent="GridContainer2"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_eyyra")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="43" type="Button" parent="GridContainer2"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_eyyra")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="44" type="Button" parent="GridContainer2"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_eyyra")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="45" type="Button" parent="GridContainer2"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_eyyra")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="46" type="Button" parent="GridContainer2"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_eyyra")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="47" type="Button" parent="GridContainer2"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_eyyra")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="50" type="Button" parent="GridContainer2"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_eyyra")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="51" type="Button" parent="GridContainer2"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_eyyra")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="52" type="Button" parent="GridContainer2"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_eyyra")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="53" type="Button" parent="GridContainer2"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_eyyra")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="54" type="Button" parent="GridContainer2"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_eyyra")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="55" type="Button" parent="GridContainer2"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_eyyra")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="56" type="Button" parent="GridContainer2"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_eyyra")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="57" type="Button" parent="GridContainer2"]
+custom_minimum_size = Vector2(195, 200)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_eyyra")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mupqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w50pf")
+
+[node name="Board" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(1800, 1370)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -849.0
+offset_top = -1388.0
+offset_right = 849.0
+offset_bottom = -72.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("3_yxi4y")
+expand_mode = 5
+
+[node name="Column0" type="Button" parent="."]
+layout_mode = 0
+offset_left = 397.0
+offset_top = 189.0
+offset_right = 599.0
+offset_bottom = 1440.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_vtnal")
+
+[node name="Column1" type="Button" parent="."]
+layout_mode = 0
+offset_left = 600.0
+offset_top = 189.0
+offset_right = 802.0
+offset_bottom = 1440.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_v2136")
+
+[node name="Column2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 798.0
+offset_top = 190.0
+offset_right = 1000.0
+offset_bottom = 1441.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_bk7l3")
+
+[node name="Column3" type="Button" parent="."]
+layout_mode = 0
+offset_left = 999.0
+offset_top = 188.0
+offset_right = 1201.0
+offset_bottom = 1439.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_2a7i8")
+
+[node name="Column4" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1201.0
+offset_top = 188.0
+offset_right = 1403.0
+offset_bottom = 1439.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_4eef1")
+
+[node name="Column5" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1403.0
+offset_top = 188.0
+offset_right = 1605.0
+offset_bottom = 1439.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_ciet1")
+
+[node name="Column6" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1603.0
+offset_top = 188.0
+offset_right = 1805.0
+offset_bottom = 1439.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_jopq0")
+
+[node name="Column7" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1805.0
+offset_top = 187.0
+offset_right = 2007.0
+offset_bottom = 1438.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_1dabp")
+
+[node name="tempWin" type="Button" parent="."]
+visible = false
+layout_mode = 0
+offset_right = 550.0
+offset_bottom = 146.0
+
+[connection signal="pressed" from="Column0" to="." method="_dropChip" binds= [0]]
+[connection signal="pressed" from="Column1" to="." method="_dropChip" binds= [1]]
+[connection signal="pressed" from="Column2" to="." method="_dropChip" binds= [2]]
+[connection signal="pressed" from="Column3" to="." method="_dropChip" binds= [3]]
+[connection signal="pressed" from="Column4" to="." method="_dropChip" binds= [4]]
+[connection signal="pressed" from="Column5" to="." method="_dropChip" binds= [5]]
+[connection signal="pressed" from="Column6" to="." method="_dropChip" binds= [6]]
+[connection signal="pressed" from="Column7" to="." method="_dropChip" binds= [7]]
