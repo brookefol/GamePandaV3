@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://w1exqyp3k1u7"]
 
 [ext_resource type="Script" path="res://navigation.gd" id="1_csj3w"]
-[ext_resource type="Texture2D" uid="uid://cc4pnspitjfwp" path="res://images/navgivationScreen.png" id="2_nt8us"]
+[ext_resource type="Texture2D" uid="uid://b1gs506pud4e0" path="res://images/Screenshot 2024-01-30 at 12.13.31 PM.png" id="2_ty8ul"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p15yk"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
@@ -23,55 +23,55 @@ script = ExtResource("1_csj3w")
 layout_mode = 0
 offset_right = 2400.0
 offset_bottom = 1600.0
-texture = ExtResource("2_nt8us")
+texture = ExtResource("2_ty8ul")
 
 [node name="toConnectFour" type="Button" parent="."]
 custom_minimum_size = Vector2(2.08165e-12, 2.08165e-12)
 layout_mode = 2
 offset_left = 211.0
-offset_top = 176.0
-offset_right = 871.0
-offset_bottom = 802.0
+offset_top = 593.0
+offset_right = 846.0
+offset_bottom = 867.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_p15yk")
 theme_override_styles/hover = SubResource("StyleBoxFlat_klp37")
 
 [node name="toTicTacToe" type="Button" parent="."]
 custom_minimum_size = Vector2(2.08165e-12, 2.08165e-12)
 layout_mode = 2
-offset_left = 201.0
-offset_top = 859.0
-offset_right = 861.0
-offset_bottom = 1478.0
+offset_left = 1214.0
+offset_top = 998.0
+offset_right = 1849.0
+offset_bottom = 1288.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_p15yk")
 theme_override_styles/hover = SubResource("StyleBoxFlat_klp37")
 
 [node name="toArchery" type="Button" parent="."]
 custom_minimum_size = Vector2(2.08165e-12, 2.08165e-12)
 layout_mode = 2
-offset_left = 1538.0
-offset_top = 176.0
-offset_right = 2198.0
-offset_bottom = 795.0
+offset_left = 1555.0
+offset_top = 591.0
+offset_right = 2192.0
+offset_bottom = 875.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_p15yk")
 theme_override_styles/hover = SubResource("StyleBoxFlat_klp37")
 
 [node name="toCrossyRoad" type="Button" parent="."]
 custom_minimum_size = Vector2(2.08165e-12, 2.08165e-12)
 layout_mode = 2
-offset_left = 872.0
-offset_top = 175.0
-offset_right = 1532.0
-offset_bottom = 794.0
+offset_left = 891.0
+offset_top = 586.0
+offset_right = 1530.0
+offset_bottom = 870.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_p15yk")
 theme_override_styles/hover = SubResource("StyleBoxFlat_klp37")
 
 [node name="toPong" type="Button" parent="."]
 custom_minimum_size = Vector2(2.08165e-12, 2.08165e-12)
 layout_mode = 2
-offset_left = 877.0
-offset_top = 852.0
-offset_right = 1537.0
-offset_bottom = 1471.0
+offset_left = 549.0
+offset_top = 1000.0
+offset_right = 1188.0
+offset_bottom = 1284.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_p15yk")
 theme_override_styles/hover = SubResource("StyleBoxFlat_klp37")
 
