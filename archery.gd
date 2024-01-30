@@ -10,7 +10,7 @@ var playerTwoScore = 0;
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	get_window().size = Vector2i(1920, 1080)
+	get_window().size = Vector2i(2400, 1600)
 
 
 
@@ -67,14 +67,14 @@ func _process(delta):
 func _xMovement():
 	var target = $marker
 	target.position.x+= speed;
-	if (target.position.x >= 1370):
+	if (target.position.x >= 1700):
 		speed = -20;
 		target.position.y += 50
-	if (target.position.x<= 540):
+	if (target.position.x<= 665):
 		speed = 20
 		target.position.y += 50
-	if (target.position.y >= 865):
-		target.position.y = 220
+	if (target.position.y >= 1260):
+		target.position.y = 357
 		
 func _distance():
 	var center = $center
