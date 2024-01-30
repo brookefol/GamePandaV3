@@ -1,13 +1,13 @@
-[gd_scene load_steps=9 format=3 uid="uid://cakmw2hepy5gu"]
+[gd_scene load_steps=9 format=3 uid="uid://byaxvuu7akfbb"]
 
 [ext_resource type="Script" path="res://archery.gd" id="1_6jsbo"]
 [ext_resource type="Texture2D" uid="uid://5nfd7awm3t8s" path="res://images/ArcheryBoard.png" id="2_0np5i"]
-[ext_resource type="Texture2D" uid="uid://crni1mrsxohc5" path="res://images/redX.png" id="3_hmd43"]
-[ext_resource type="Texture2D" uid="uid://dalofw2neaoxq" path="res://images/back.png" id="4_78b4o"]
-[ext_resource type="Texture2D" uid="uid://drnfhxr6yf5bv" path="res://images/ArcheryCircle.png" id="5_ccmpn"]
-[ext_resource type="Texture2D" uid="uid://dk2efjormh4op" path="res://images/ArcheryPlayerOneWins.png" id="6_fa0xh"]
-[ext_resource type="Texture2D" uid="uid://dfpsu53dohdxt" path="res://images/ArcheryPlayerTwoWins.png" id="7_uln2p"]
-[ext_resource type="Texture2D" uid="uid://jbonjitbewwv" path="res://images/border.png" id="8_7keyg"]
+[ext_resource type="Texture2D" uid="uid://cf53kmt8hwe8f" path="res://images/redX.png" id="3_hmd43"]
+[ext_resource type="Texture2D" uid="uid://d0bujy2jrqmri" path="res://images/back.png" id="4_78b4o"]
+[ext_resource type="Texture2D" uid="uid://by5fibhgnihve" path="res://images/ArcheryCircle.png" id="5_ccmpn"]
+[ext_resource type="Texture2D" uid="uid://umfh8dvysh7u" path="res://images/ArcheryPlayerOneWins.png" id="6_fa0xh"]
+[ext_resource type="Texture2D" uid="uid://cmlbjf4hs063o" path="res://images/ArcheryPlayerTwoWins.png" id="7_uln2p"]
+[ext_resource type="Texture2D" uid="uid://mw6r1gpbhxht" path="res://images/border.png" id="8_7keyg"]
 
 [node name="Archery" type="Control"]
 layout_mode = 3

@@ -20,8 +20,13 @@ func _on_to_pong_pressed():
 
 
 func _on_to_archery_pressed():
-	get_tree().change_scene_to_file("res://Scenes/crossyRoad.tscn")
+	get_tree().change_scene_to_file("res://Scenes/archery.tscn")
+
 
 
 func _on_to_tic_tac_toe_pressed():
-	pass # Replace with function body.
+	pass
+
+
+func _on_to_crossy_road_pressed():
+	get_tree().change_scene_to_file("res://Scenes/crossyRoad.tscn")
