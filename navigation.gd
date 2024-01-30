@@ -25,7 +25,7 @@ func _on_to_archery_pressed():
 
 
 func _on_to_tic_tac_toe_pressed():
-	pass
+	get_tree().change_scene_to_file("res://tictactoe.tscn")
 
 
 func _on_to_crossy_road_pressed():
