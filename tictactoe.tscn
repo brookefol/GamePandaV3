@@ -1,15 +1,19 @@
-[gd_scene load_steps=7 format=3 uid="uid://d240jv0isjdc6"]
+[gd_scene load_steps=9 format=3 uid="uid://d240jv0isjdc6"]
 
 [ext_resource type="Texture2D" uid="uid://dqgbvgnok43k6" path="res://images/GamePandaBackgroundv01.png" id="1_2bwiq"]
+[ext_resource type="Script" path="res://tictactoe.gd" id="1_sn3qc"]
 [ext_resource type="Texture2D" uid="uid://chavthefa12ne" path="res://Albert Einstein.png" id="2_o7y7j"]
 [ext_resource type="Script" path="res://Scenes/TextureButton.gd" id="3_yvkjq"]
-[ext_resource type="Texture2D" uid="uid://dfwmi8ly6qkhj" path="res://TicTacToe-Sprites/grid.png" id="4_55odn"]
+[ext_resource type="PackedScene" uid="uid://b3dq4prgvjk3u" path="res://board.tscn" id="5_0i26l"]
+[ext_resource type="Texture2D" uid="uid://xl7h5sn2wgi" path="res://TicTacToe-Sprites/green.png" id="6_vciwy"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_om2bs"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6ssp6"]
 
-[node name="tictactoe" type="Node2D"]
+[node name="TicTacToeMain" type="Node2D"]
+position = Vector2(-2, 13)
+script = ExtResource("1_sn3qc")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 offset_right = 40.0
@@ -38,7 +42,7 @@ offset_bottom = 160.0
 theme_override_styles/normal = SubResource("StyleBoxEmpty_om2bs")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_6ssp6")
 
-[node name="Board" type="Sprite2D" parent="."]
-position = Vector2(1193, 797)
-scale = Vector2(1.76, 1.56)
-texture = ExtResource("4_55odn")
+[node name="Board" parent="VBoxContainer/Background" instance=ExtResource("5_0i26l")]
+position = Vector2(1177, 779)
+scale = Vector2(2.84, 2.52)
+texture = ExtResource("6_vciwy")

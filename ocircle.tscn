@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dhajr5vrfckvo"]
+
+[ext_resource type="Texture2D" uid="uid://pfbioy6m3kel" path="res://TicTacToe-Sprites/woodeno.png" id="1_jfrqw"]
+
+[node name="ocircle" type="Sprite2D"]
+texture = ExtResource("1_jfrqw")

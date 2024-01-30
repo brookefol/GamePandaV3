@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://b3dq4prgvjk3u"]
+
+[ext_resource type="Texture2D" uid="uid://dfwmi8ly6qkhj" path="res://TicTacToe-Sprites/grid.png" id="1_c0nv7"]
+
+[node name="Board" type="Sprite2D"]
+texture = ExtResource("1_c0nv7")
