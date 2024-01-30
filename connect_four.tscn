@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://kptvfb58xv0p"]
+[gd_scene load_steps=24 format=3 uid="uid://b51p2oykatbnj"]
 
 [ext_resource type="Script" path="res://connect_four.gd" id="1_qsyxw"]
 [ext_resource type="Texture2D" uid="uid://dqgbvgnok43k6" path="res://images/GamePandaBackgroundv01.png" id="2_j35x5"]
@@ -862,17 +862,8 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_1dabp")
 
 [node name="Player1Win" type="TextureRect" parent="."]
 layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -513.5
-offset_top = -513.5
-offset_right = 513.5
-offset_bottom = 513.5
-grow_horizontal = 2
-grow_vertical = 2
+offset_right = 1027.0
+offset_bottom = 1027.0
 texture = ExtResource("6_oyst4")
 
 [node name="Player2Win" type="TextureRect" parent="."]

@@ -15,6 +15,15 @@ var playerSymbol = ["X", "O"]
 func _ready():
 	get_window().size = Vector2i(2400, 1600)
 	_setChipsOff()
+	playerTurn = 0
+	var board = [
+		[null, null, null, null, null, null, null, null], 
+		[null, null, null, null, null, null, null, null], 
+		[null, null, null, null, null, null, null, null], 
+		[null, null, null, null, null, null, null, null],
+		[null, null, null, null, null, null, null, null],
+		[null, null, null, null, null, null, null, null]
+		]
 
 func _setChipsOff():
 	for i in range(6):
@@ -29,31 +38,33 @@ func _setChipsOff():
 			var button = get_node("GridContainer2/"+value)
 			if button:
 				button.disabled = not button.disabled
-	var player1Win = get_node("Player1Win")
+	var player1Win: TextureRect
+	player1Win = get_node("Player1Win")
 	var player2Win = get_node("Player2Win")
 	var backHome = get_node("BackHome")
 	var restart = get_node("Restart")
-	
-	print(player1Win)
+	if player1Win:
+		player1Win.visible = not player1Win.visible
+	if player2Win:
+		player2Win.visible = not player2Win.visible
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
 
 func _displayWin():
-	if (playerTurn%2 == 0):
-		var winBoard = get_node("Player1Win")
-		winBoard.visible = true
 	if (playerTurn%2 == 1):
-		var winBoard = get_node("Player2Win")
-		winBoard.visible = true
-	var backHome = get_node("BackHome")
-	var restart = get_node("Restart")
+		var player1Win = get_node("Player1Win")
+		if player1Win:
+			player1Win.visible = not player1Win.visible
+	if (playerTurn%2 == 0):
+		var player2Win = get_node("Player2Win")
+		if player2Win:
+			player2Win.visible = not player2Win.visible
+	for i in range(8):
+		var column = get_node("Column" + str(i))
+		column.disabled = true
 	
-	backHome.visible = true
-	restart.visible = true
-		
-
 
 func _winCheck():
 	print(board[5], "\n", board[4], "\n", board[3], "\n",  board[2], "\n", board[1], "\n", board[0])
@@ -102,3 +113,15 @@ func _on_texture_pressed():
 	
 func _on_back_button_pressed():
 	get_tree().change_scene_to_file("res://navigation.tscn") # Replace with function body.
+
+
+func _on_main_menu_pressed():
+	get_tree().change_scene_to_file("res://Scenes/navigation.tscn")
+
+
+func _on_restart_pressed():
+	_ready()
+
+
+func _on_back_home_pressed():
+	get_tree().change_scene_to_file("res://Scenes/navigation.tscn")

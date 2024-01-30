@@ -1,10 +1,16 @@
-[gd_scene load_steps=18 format=3 uid="uid://c5l7gbg4j7gs"]
+[gd_scene load_steps=48 format=3 uid="uid://d02l1com22vj4"]
 
 [ext_resource type="Script" path="res://connect_four.gd" id="1_g5cus"]
 [ext_resource type="Texture2D" uid="uid://dqgbvgnok43k6" path="res://images/GamePandaBackgroundv01.png" id="1_sf51l"]
 [ext_resource type="Texture2D" uid="uid://dhoj2oh6dn8wd" path="res://images/ConnectFourBoardv01.png" id="2_6p7gf"]
 [ext_resource type="Texture2D" uid="uid://chavthefa12ne" path="res://Albert Einstein.png" id="3_dc30y"]
 [ext_resource type="Script" path="res://Scenes/TextureButton.gd" id="4_fcpwr"]
+[ext_resource type="Texture2D" uid="uid://umfh8dvysh7u" path="res://images/ArcheryPlayerOneWins.png" id="6_pntl0"]
+[ext_resource type="Texture2D" uid="uid://cmlbjf4hs063o" path="res://images/ArcheryPlayerTwoWins.png" id="7_0njlf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pr3bk"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0qlo3"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1wk6u"]
 bg_color = Color(1, 0.866667, 0, 1)
@@ -20,26 +26,78 @@ bg_color = Color(0, 1, 0, 0.662745)
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vtnal"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pkp4i"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hc8j7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_d5sq3"]
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v2136"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ffaej"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hjb8m"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_b5e6e"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bk7l3"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_iwox1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6h0ie"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ovj74"]
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2a7i8"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ayafo"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5w2na"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kekd1"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4eef1"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_m7kwt"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_oovbo"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ypvnd"]
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ciet1"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0awcl"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8jniq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7sj2v"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jopq0"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_buleb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hb0pa"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qf5ds"]
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1dabp"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bdc4t"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8qgch"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dgu1t"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_356lf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vdxc1"]
 
 [node name="connectFour" type="Control"]
 custom_minimum_size = Vector2(2000, 1600)
@@ -66,6 +124,15 @@ offset_bottom = 1425.0
 scale = Vector2(0.762633, 0.52137)
 texture_normal = ExtResource("3_dc30y")
 script = ExtResource("4_fcpwr")
+
+[node name="mainMenu" type="Button" parent="Background"]
+layout_mode = 0
+offset_left = 1634.0
+offset_top = 14.0
+offset_right = 2378.0
+offset_bottom = 160.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_pr3bk")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_0qlo3")
 
 [node name="GridContainer" type="GridContainer" parent="."]
 layout_mode = 1
@@ -793,6 +860,9 @@ offset_top = 189.0
 offset_right = 599.0
 offset_bottom = 1440.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_vtnal")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_pkp4i")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_hc8j7")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_d5sq3")
 
 [node name="Column1" type="Button" parent="."]
 layout_mode = 0
@@ -801,6 +871,9 @@ offset_top = 189.0
 offset_right = 802.0
 offset_bottom = 1440.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_v2136")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_ffaej")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_hjb8m")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_b5e6e")
 
 [node name="Column2" type="Button" parent="."]
 layout_mode = 0
@@ -809,6 +882,9 @@ offset_top = 190.0
 offset_right = 1000.0
 offset_bottom = 1441.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_bk7l3")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_iwox1")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_6h0ie")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_ovj74")
 
 [node name="Column3" type="Button" parent="."]
 layout_mode = 0
@@ -817,6 +893,9 @@ offset_top = 188.0
 offset_right = 1201.0
 offset_bottom = 1439.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_2a7i8")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_ayafo")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_5w2na")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_kekd1")
 
 [node name="Column4" type="Button" parent="."]
 layout_mode = 0
@@ -825,6 +904,9 @@ offset_top = 188.0
 offset_right = 1403.0
 offset_bottom = 1439.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_4eef1")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_m7kwt")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_oovbo")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_ypvnd")
 
 [node name="Column5" type="Button" parent="."]
 layout_mode = 0
@@ -833,6 +915,9 @@ offset_top = 188.0
 offset_right = 1605.0
 offset_bottom = 1439.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_ciet1")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_0awcl")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_8jniq")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_7sj2v")
 
 [node name="Column6" type="Button" parent="."]
 layout_mode = 0
@@ -841,6 +926,9 @@ offset_top = 188.0
 offset_right = 1805.0
 offset_bottom = 1439.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_jopq0")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_buleb")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_hb0pa")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_qf5ds")
 
 [node name="Column7" type="Button" parent="."]
 layout_mode = 0
@@ -849,13 +937,75 @@ offset_top = 187.0
 offset_right = 2007.0
 offset_bottom = 1438.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_1dabp")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_bdc4t")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_8qgch")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_dgu1t")
 
-[node name="tempWin" type="Button" parent="."]
+[node name="Player1Win" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -513.5
+offset_top = -231.5
+offset_right = 513.5
+offset_bottom = 231.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("6_pntl0")
+
+[node name="Player2Win" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -513.5
+offset_top = -231.5
+offset_right = 513.5
+offset_bottom = 231.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("7_0njlf")
+
+[node name="Restart" type="Button" parent="."]
 visible = false
-layout_mode = 0
-offset_right = 550.0
-offset_bottom = 146.0
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -512.0
+offset_top = -173.0
+offset_right = 512.0
+offset_bottom = 173.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/normal = SubResource("StyleBoxEmpty_356lf")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_vdxc1")
 
+[node name="BackHome" type="Button" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -512.0
+offset_top = 168.0
+offset_right = 512.0
+offset_bottom = 510.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/normal = SubResource("StyleBoxEmpty_356lf")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_vdxc1")
+
+[connection signal="pressed" from="Background/mainMenu" to="." method="_on_main_menu_pressed"]
 [connection signal="pressed" from="Column0" to="." method="_dropChip" binds= [0]]
 [connection signal="pressed" from="Column1" to="." method="_dropChip" binds= [1]]
 [connection signal="pressed" from="Column2" to="." method="_dropChip" binds= [2]]
@@ -864,3 +1014,5 @@ offset_bottom = 146.0
 [connection signal="pressed" from="Column5" to="." method="_dropChip" binds= [5]]
 [connection signal="pressed" from="Column6" to="." method="_dropChip" binds= [6]]
 [connection signal="pressed" from="Column7" to="." method="_dropChip" binds= [7]]
+[connection signal="pressed" from="Restart" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="BackHome" to="." method="_on_back_home_pressed"]
