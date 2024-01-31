@@ -1,6 +1,8 @@
 extends Node
 
 @export var circle_scene: PackedScene
+@export var cross_scene: PackedScene
+
 
 var player: int
 var grid_data: Array
@@ -48,3 +50,8 @@ func create_marker(player, position):
 		var circle = circle_scene.instantiate()
 		circle.position = position
 		add_child(circle)
+		
+	else:
+		var cross = cross_scene.instantiate()
+		cross.position = position
+		add_child(cross)
