@@ -1,5 +1,7 @@
 extends Node
 
+@export var circle_scene: PackedScene
+
 var player: int
 var grid_data: Array
 var grid_pos: Vector2i # creates (x,y) as variable
@@ -26,6 +28,8 @@ func _input(event):
 				
 				if grid_data[grid_pos.y][grid_pos.x] == 0:
 					grid_data[grid_pos.y][grid_pos.x] = player # y = up/down, x = left/right
+					# placing x or o according to player decision
+					create_marker(player, (grid_pos * cell_size + Vector2i(cell_size/2, cell_size/2)))
 					player *= -1
 					print(grid_data)
 				
@@ -37,3 +41,10 @@ func new_game():
 		[0, 0, 0], 
 		[0, 0, 0]
 		] # three rows of three
+		
+func create_marker(player, position):
+	#creating markers (x or o)
+	if player == 1:
+		var circle = circle_scene.instantiate()
+		circle.position = position
+		add_child(circle)
