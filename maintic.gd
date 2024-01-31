@@ -1,5 +1,6 @@
 extends Node
 
+var player: int
 var grid_data: Array
 var grid_pos: Vector2i # creates (x,y) as variable
 var board_size: int
@@ -22,10 +23,15 @@ func _input(event):
 		if event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
 			if event.position.x < board_size:
 				grid_pos = Vector2i(event.position/cell_size) # turning mouse position into coordinates for each of the 9 boxes
-				print(grid_pos)
+				
+				if grid_data[grid_pos.y][grid_pos.x] == 0:
+					grid_data[grid_pos.y][grid_pos.x] = player # y = up/down, x = left/right
+					player *= -1
+					print(grid_data)
 				
 
 func new_game():
+	player = 1
 	grid_data = [
 		[0, 0, 0], 
 		[0, 0, 0], 

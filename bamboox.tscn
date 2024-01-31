@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://c0opj1afahxgs"]
+
+[ext_resource type="Texture2D" uid="uid://bvu0qbxdkta1u" path="res://TicTacToe-Sprites/bamboox-removebg-preview (1).png" id="1_8pypi"]
+
+[node name="bamboox" type="Sprite2D"]
+texture = ExtResource("1_8pypi")
