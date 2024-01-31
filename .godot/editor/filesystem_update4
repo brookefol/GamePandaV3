@@ -27,3 +27,5 @@ res://maintic.gd
 res://bamboox.tscn
 res://woodeno.tscn
 res://connect_four.tscn
+res://game_over_menufortictac.tscn
+res://game_over_menufortictac.gd

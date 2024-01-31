@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://dawvgknmvl73t"]
+[gd_scene load_steps=10 format=3 uid="uid://dawvgknmvl73t"]
 
 [ext_resource type="PackedScene" uid="uid://kpy80cb1cfth" path="res://board2.tscn" id="1_e478a"]
 [ext_resource type="Script" path="res://maintic.gd" id="1_s1smh"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://c0opj1afahxgs" path="res://bamboox.tscn" id="3_8phrp"]
 [ext_resource type="Texture2D" uid="uid://dqgbvgnok43k6" path="res://images/GamePandaBackgroundv01.png" id="5_cncet"]
 [ext_resource type="FontFile" uid="uid://csnw7ep0oqlf6" path="res://images/ArchitectsDaughter.ttf" id="6_cwf5b"]
+[ext_resource type="PackedScene" uid="uid://ccnmxucq3ba3a" path="res://game_over_menufortictac.tscn" id="7_11exg"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jiuvt"]
 texture = ExtResource("5_cncet")
@@ -60,3 +61,8 @@ offset_top = 200.0
 offset_right = 850.0
 offset_bottom = 400.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_2an82")
+
+[node name="GameOverMenu" parent="." instance=ExtResource("7_11exg")]
+process_mode = 2
+
+[connection signal="restart" from="GameOverMenu" to="." method="_on_game_over_menu_restart"]

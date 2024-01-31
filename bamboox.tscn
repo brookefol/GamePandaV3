@@ -2,6 +2,6 @@
 
 [ext_resource type="Texture2D" uid="uid://bvu0qbxdkta1u" path="res://TicTacToe-Sprites/bamboox-removebg-preview (1).png" id="1_8pypi"]
 
-[node name="bamboox" type="Sprite2D"]
+[node name="bamboox" type="Sprite2D" groups=["crosses"]]
 scale = Vector2(1.49943, 1.28931)
 texture = ExtResource("1_8pypi")
