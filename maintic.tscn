@@ -1,9 +1,27 @@
-[gd_scene load_steps=5 format=3 uid="uid://dawvgknmvl73t"]
+[gd_scene load_steps=9 format=3 uid="uid://dawvgknmvl73t"]
 
 [ext_resource type="PackedScene" uid="uid://kpy80cb1cfth" path="res://board2.tscn" id="1_e478a"]
 [ext_resource type="Script" path="res://maintic.gd" id="1_s1smh"]
 [ext_resource type="PackedScene" uid="uid://b10qdktrb2gu3" path="res://woodeno.tscn" id="2_iu0x0"]
 [ext_resource type="PackedScene" uid="uid://c0opj1afahxgs" path="res://bamboox.tscn" id="3_8phrp"]
+[ext_resource type="Texture2D" uid="uid://dqgbvgnok43k6" path="res://images/GamePandaBackgroundv01.png" id="5_cncet"]
+[ext_resource type="FontFile" uid="uid://csnw7ep0oqlf6" path="res://images/ArchitectsDaughter.ttf" id="6_cwf5b"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jiuvt"]
+texture = ExtResource("5_cncet")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2an82"]
+bg_color = Color(0.792157, 0.921569, 0.686275, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_size = 5
+shadow_offset = Vector2(5, 5)
 
 [node name="maintic" type="Node"]
 script = ExtResource("1_s1smh")
@@ -12,3 +30,33 @@ cross_scene = ExtResource("3_8phrp")
 
 [node name="Board" parent="." instance=ExtResource("1_e478a")]
 position = Vector2(300, 300)
+
+[node name="SidePanel" type="Panel" parent="."]
+custom_minimum_size = Vector2(300, 600)
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_jiuvt")
+
+[node name="PlayerLabel" type="Label" parent="."]
+offset_left = 617.0
+offset_top = 16.0
+offset_right = 927.0
+offset_bottom = 96.0
+scale = Vector2(0.879999, 0.959999)
+theme_override_colors/font_color = Color(0.129412, 0.592157, 0.270588, 1)
+theme_override_fonts/font = ExtResource("6_cwf5b")
+theme_override_font_sizes/font_size = 46
+text = "Next Player:"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Panel" type="Panel" parent="."]
+offset_left = 650.0
+offset_top = 200.0
+offset_right = 850.0
+offset_bottom = 400.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_2an82")

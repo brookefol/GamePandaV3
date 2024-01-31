@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://b51p2oykatbnj"]
+[gd_scene load_steps=24 format=3 uid="uid://l2cnd3pwbuhk"]
 
 [ext_resource type="Script" path="res://connect_four.gd" id="1_qsyxw"]
 [ext_resource type="Texture2D" uid="uid://dqgbvgnok43k6" path="res://images/GamePandaBackgroundv01.png" id="2_j35x5"]

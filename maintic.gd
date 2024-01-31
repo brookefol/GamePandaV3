@@ -5,6 +5,7 @@ extends Node
 
 
 var player: int
+var temp_marker
 var grid_data: Array
 var grid_pos: Vector2i # creates (x,y) as variable
 var board_size: int
@@ -44,7 +45,7 @@ func new_game():
 		[0, 0, 0]
 		] # three rows of three
 		
-func create_marker(player, position):
+func create_marker(player, position, temp=false):
 	#creating markers (x or o)
 	if player == 1:
 		var circle = circle_scene.instantiate()
