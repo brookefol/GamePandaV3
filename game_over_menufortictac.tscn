@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://ccnmxucq3ba3a"]
+[gd_scene load_steps=7 format=3 uid="uid://ccnmxucq3ba3a"]
 
 [ext_resource type="Script" path="res://game_over_menufortictac.gd" id="1_3c2oo"]
 [ext_resource type="Texture2D" uid="uid://bskddro4se2ch" path="res://images/GamePandaBackgroundv02.png" id="1_s0bj2"]
 [ext_resource type="FontFile" uid="uid://csnw7ep0oqlf6" path="res://images/ArchitectsDaughter.ttf" id="2_ccjn3"]
+[ext_resource type="Texture2D" uid="uid://d0bujy2jrqmri" path="res://images/back.png" id="4_13gut"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_b5nxi"]
 texture = ExtResource("1_s0bj2")
@@ -42,4 +43,13 @@ theme_override_fonts/font = ExtResource("2_ccjn3")
 theme_override_styles/normal = SubResource("StyleBoxFlat_a2k6c")
 text = "Play Again?"
 
+[node name="BackButton" type="TextureButton" parent="."]
+offset_left = 537.0
+offset_top = 402.0
+offset_right = 1333.0
+offset_bottom = 625.0
+scale = Vector2(0.248486, 0.248238)
+texture_normal = ExtResource("4_13gut")
+
 [connection signal="pressed" from="RestartButton" to="." method="_on_restart_button_pressed"]
+[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]

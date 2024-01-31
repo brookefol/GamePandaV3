@@ -25,7 +25,8 @@ func _on_to_archery_pressed():
 
 
 func _on_to_tic_tac_toe_pressed():
-	get_tree().change_scene_to_file("res://tictactoe.tscn")
+	get_window().size = Vector2i(900, 600)
+	get_tree().change_scene_to_file("res://maintic.tscn")
 
 
 func _on_to_crossy_road_pressed():
