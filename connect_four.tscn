@@ -1,10 +1,9 @@
-[gd_scene load_steps=24 format=3 uid="uid://b51p2oykatbnj"]
+[gd_scene load_steps=23 format=3 uid="uid://l2cnd3pwbuhk"]
 
 [ext_resource type="Script" path="res://connect_four.gd" id="1_qsyxw"]
 [ext_resource type="Texture2D" uid="uid://dqgbvgnok43k6" path="res://images/GamePandaBackgroundv01.png" id="2_j35x5"]
-[ext_resource type="Texture2D" uid="uid://chavthefa12ne" path="res://Albert Einstein.png" id="3_nu5jc"]
+[ext_resource type="Texture2D" uid="uid://d0bujy2jrqmri" path="res://images/back.png" id="3_1b6o8"]
 [ext_resource type="Texture2D" uid="uid://dhoj2oh6dn8wd" path="res://images/ConnectFourBoardv01.png" id="3_yxi4y"]
-[ext_resource type="Script" path="res://Scenes/TextureButton.gd" id="4_p8445"]
 [ext_resource type="Texture2D" uid="uid://biuoa78bsnb1o" path="res://images/player1wins.png" id="6_oyst4"]
 [ext_resource type="Texture2D" uid="uid://c7dq6l4mtt87r" path="res://images/player2wins.png" id="7_pa0yr"]
 
@@ -69,13 +68,12 @@ texture = ExtResource("2_j35x5")
 
 [node name="TextureButton" type="TextureButton" parent="Background"]
 layout_mode = 0
-offset_left = 1634.0
-offset_top = 14.0
-offset_right = 2814.0
-offset_bottom = 1425.0
-scale = Vector2(0.762633, 0.52137)
-texture_normal = ExtResource("3_nu5jc")
-script = ExtResource("4_p8445")
+offset_left = 1881.0
+offset_top = 35.0
+offset_right = 2677.0
+offset_bottom = 258.0
+scale = Vector2(0.589444, 0.519999)
+texture_normal = ExtResource("3_1b6o8")
 
 [node name="GridContainer" type="GridContainer" parent="."]
 layout_mode = 1
@@ -902,6 +900,7 @@ offset_bottom = 241.6
 theme_override_styles/normal = SubResource("StyleBoxEmpty_y3utj")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_c731e")
 
+[connection signal="pressed" from="Background/TextureButton" to="." method="_on_texture_button_pressed"]
 [connection signal="pressed" from="Column0" to="." method="_dropChip" binds= [0]]
 [connection signal="pressed" from="Column1" to="." method="_dropChip" binds= [1]]
 [connection signal="pressed" from="Column2" to="." method="_dropChip" binds= [2]]

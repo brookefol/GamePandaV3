@@ -1,10 +1,9 @@
-[gd_scene load_steps=48 format=3 uid="uid://d02l1com22vj4"]
+[gd_scene load_steps=47 format=3 uid="uid://c5l7gbg4j7gs"]
 
 [ext_resource type="Script" path="res://connect_four.gd" id="1_g5cus"]
 [ext_resource type="Texture2D" uid="uid://dqgbvgnok43k6" path="res://images/GamePandaBackgroundv01.png" id="1_sf51l"]
 [ext_resource type="Texture2D" uid="uid://dhoj2oh6dn8wd" path="res://images/ConnectFourBoardv01.png" id="2_6p7gf"]
-[ext_resource type="Texture2D" uid="uid://chavthefa12ne" path="res://Albert Einstein.png" id="3_dc30y"]
-[ext_resource type="Script" path="res://Scenes/TextureButton.gd" id="4_fcpwr"]
+[ext_resource type="Texture2D" uid="uid://d0bujy2jrqmri" path="res://images/back.png" id="3_frt5b"]
 [ext_resource type="Texture2D" uid="uid://umfh8dvysh7u" path="res://images/ArcheryPlayerOneWins.png" id="6_pntl0"]
 [ext_resource type="Texture2D" uid="uid://cmlbjf4hs063o" path="res://images/ArcheryPlayerTwoWins.png" id="7_0njlf"]
 
@@ -115,16 +114,6 @@ offset_right = 2000.0
 offset_bottom = 1600.0
 texture = ExtResource("1_sf51l")
 
-[node name="TextureButton" type="TextureButton" parent="Background"]
-layout_mode = 0
-offset_left = 1634.0
-offset_top = 14.0
-offset_right = 2814.0
-offset_bottom = 1425.0
-scale = Vector2(0.762633, 0.52137)
-texture_normal = ExtResource("3_dc30y")
-script = ExtResource("4_fcpwr")
-
 [node name="mainMenu" type="Button" parent="Background"]
 layout_mode = 0
 offset_left = 1634.0
@@ -133,6 +122,15 @@ offset_right = 2378.0
 offset_bottom = 160.0
 theme_override_styles/normal = SubResource("StyleBoxEmpty_pr3bk")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_0qlo3")
+
+[node name="TextureButton" type="TextureButton" parent="Background"]
+layout_mode = 0
+offset_left = 1769.0
+offset_top = 18.0
+offset_right = 2565.0
+offset_bottom = 241.0
+scale = Vector2(0.72, 0.64)
+texture_normal = ExtResource("3_frt5b")
 
 [node name="GridContainer" type="GridContainer" parent="."]
 layout_mode = 1
@@ -1006,6 +1004,7 @@ theme_override_styles/normal = SubResource("StyleBoxEmpty_356lf")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_vdxc1")
 
 [connection signal="pressed" from="Background/mainMenu" to="." method="_on_main_menu_pressed"]
+[connection signal="pressed" from="Background/TextureButton" to="." method="_on_texture_button_pressed"]
 [connection signal="pressed" from="Column0" to="." method="_dropChip" binds= [0]]
 [connection signal="pressed" from="Column1" to="." method="_dropChip" binds= [1]]
 [connection signal="pressed" from="Column2" to="." method="_dropChip" binds= [2]]
