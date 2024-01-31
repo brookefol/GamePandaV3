@@ -6,6 +6,7 @@ extends Node
 
 var player: int
 var temp_marker
+var player_panel_pos: Vector2i
 var grid_data: Array
 var grid_pos: Vector2i # creates (x,y) as variable
 var board_size: int
@@ -16,6 +17,8 @@ func _ready():
 	board_size = $Board.texture.get_width() # Replace with function body.
 	# board size divided by 3 to split boxes to get individual cells
 	cell_size = board_size/3
+	#getting coords of the small panel on right side
+	player_panel_pos = $PlayerPanel.get_position()
 	new_game()
 	
 
@@ -34,6 +37,9 @@ func _input(event):
 					# placing x or o according to player decision
 					create_marker(player, (grid_pos * cell_size + Vector2i(cell_size/2, cell_size/2)))
 					player *= -1
+					#updating panel marker
+					temp_marker.queue_free()
+					create_marker(player, player_panel_pos + Vector2i(cell_size/2, cell_size/2), true)
 					print(grid_data)
 				
 
@@ -44,6 +50,8 @@ func new_game():
 		[0, 0, 0], 
 		[0, 0, 0]
 		] # three rows of three
+	# creating marker to show the turn of starting player
+	create_marker(player, player_panel_pos + Vector2i(cell_size / 2, cell_size / 2), true)
 		
 func create_marker(player, position, temp=false):
 	#creating markers (x or o)
@@ -51,8 +59,10 @@ func create_marker(player, position, temp=false):
 		var circle = circle_scene.instantiate()
 		circle.position = position
 		add_child(circle)
+		if temp: temp_marker = circle # if temp = true
 		
 	else:
 		var cross = cross_scene.instantiate()
 		cross.position = position
 		add_child(cross)
+		if temp: temp_marker = cross # if temp = true
