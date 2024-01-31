@@ -19,7 +19,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_csj3w")
 
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="BackgroundImage" type="TextureRect" parent="."]
 layout_mode = 0
 offset_right = 2400.0
 offset_bottom = 1600.0
