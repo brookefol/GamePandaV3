@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://chavthefa12ne" path="res://Albert Einstein.png" id="2_o7y7j"]
 [ext_resource type="Script" path="res://Scenes/TextureButton.gd" id="3_yvkjq"]
 [ext_resource type="PackedScene" uid="uid://b3dq4prgvjk3u" path="res://board.tscn" id="5_0i26l"]
-[ext_resource type="Texture2D" uid="uid://xl7h5sn2wgi" path="res://TicTacToe-Sprites/green.png" id="6_vciwy"]
+[ext_resource type="Texture2D" uid="uid://bl5bqpjujqpds" path="res://TicTacToe-Sprites/gridactual.png" id="6_qqj4v"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_om2bs"]
 
@@ -42,7 +42,7 @@ offset_bottom = 160.0
 theme_override_styles/normal = SubResource("StyleBoxEmpty_om2bs")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_6ssp6")
 
-[node name="Board" parent="VBoxContainer/Background" instance=ExtResource("5_0i26l")]
-position = Vector2(1177, 779)
-scale = Vector2(2.84, 2.52)
-texture = ExtResource("6_vciwy")
+[node name="Board" parent="." instance=ExtResource("5_0i26l")]
+position = Vector2(1171, 822)
+scale = Vector2(2.83667, 2.21704)
+texture = ExtResource("6_qqj4v")

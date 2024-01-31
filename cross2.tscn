@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://d43dkuhrcmod"]
+
+[ext_resource type="Texture2D" uid="uid://c1kv7tyk4qpmo" path="res://TicTacToe-Sprites/cross.png" id="1_36fkq"]
+
+[node name="Cross" type="Sprite2D"]
+texture = ExtResource("1_36fkq")
